@@ -151,7 +151,7 @@
                                  open: false,
                                  search: @entangle('input_nama_barang').live,
                                  selectedId: @entangle('selected_barang_id').live,
-                                 items: @js(\App\Models\Barang::orderBy('nama_barang')->get(['id', 'no', 'nama_barang', 'jumlah', 'satuan'])),
+                                 items: @js(\App\Models\Barang::whereIn('status_racikan', ['Non Racikan', 'Sudah Diracik'])->orderBy('nama_barang')->get(['id', 'no', 'nama_barang', 'status_racikan', 'jumlah', 'satuan'])),
                                  get filteredItems() {
                                      if (!this.search || this.search.trim() === '') {
                                          return this.items;
@@ -196,6 +196,8 @@
                                             <div>
                                                 <span class="font-semibold text-gray-900 dark:text-white" x-text="item.nama_barang"></span>
                                                 <span class="text-xs font-mono text-gray-400 ml-1" x-text="'[' + item.no + ']'"></span>
+                                                <span class="text-[11px] font-semibold px-1.5 py-0.5 rounded bg-blue-50 text-blue-700 ml-1"
+                                                      x-text="item.status_racikan || 'Non Racikan'"></span>
                                             </div>
                                             <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 dark:bg-gray-900 text-slate-700 dark:text-slate-300 shrink-0"
                                                   x-text="'Stok: ' + item.jumlah"></span>

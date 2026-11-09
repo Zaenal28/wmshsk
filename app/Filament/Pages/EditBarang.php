@@ -39,6 +39,7 @@ class EditBarang extends Page implements HasForms
             'no' => $this->barang->no,
             'supplier' => $this->barang->supplier,
             'nama_barang' => $this->barang->nama_barang,
+            'status_racikan' => $this->barang->status_racikan ?: 'Non Racikan',
             'jumlah' => $this->barang->jumlah,
             'tanggal_masuk' => $this->barang->tanggal_masuk?->format('Y-m-d'),
             'tanggal_expired' => $this->barang->tanggal_expired?->format('Y-m-d'),
@@ -71,6 +72,11 @@ class EditBarang extends Page implements HasForms
                                 ->label('Nama Barang')
                                 ->required()
                                 ->maxLength(200),
+
+                            Select::make('status_racikan')
+                                ->label('Status / Tipe Racikan')
+                                ->options(fn (): array => Barang::getStatusRacikanOptions())
+                                ->required(),
 
                             TextInput::make('jumlah')
                                 ->label('Jumlah')

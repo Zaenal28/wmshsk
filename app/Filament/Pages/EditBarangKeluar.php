@@ -60,6 +60,7 @@ class EditBarangKeluar extends Page
     public function getDaftarBarangProperty()
     {
         return Barang::query()
+            ->whereIn('status_racikan', ['Non Racikan', 'Sudah Diracik'])
             ->when($this->searchModal !== '', function ($q) {
                 $term = '%' . trim($this->searchModal) . '%';
                 $q->where(function ($sub) use ($term) {

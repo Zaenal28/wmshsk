@@ -45,8 +45,15 @@
                 </div>
 
                 <div class="p-4 rounded-lg bg-slate-50 dark:bg-gray-800/60 border border-slate-200/70 dark:border-gray-700">
-                    <div class="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">Nama Barang</div>
-                    <div class="mt-1 text-base font-bold text-gray-900 dark:text-white">{{ $barang->nama_barang }}</div>
+                    <div class="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">Nama Barang & Status Racikan</div>
+                    <div class="mt-1 flex flex-wrap items-center gap-2">
+                        <span class="text-base font-bold text-gray-900 dark:text-white">{{ $barang->nama_barang }}</span>
+                        @php $rb = $barang->status_racikan_badge; @endphp
+                        <span style="background-color: {{ $rb['bg'] }}; color: {{ $rb['text'] }}; border: 1px solid {{ $rb['border'] }};"
+                              class="inline-flex items-center px-2 py-0.5 rounded-md text-xs font-bold">
+                            {{ $rb['label'] }}
+                        </span>
+                    </div>
                 </div>
 
                 <div class="p-4 rounded-lg bg-slate-50 dark:bg-gray-800/60 border border-slate-200/70 dark:border-gray-700">

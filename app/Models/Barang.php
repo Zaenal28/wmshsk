@@ -17,6 +17,7 @@ class Barang extends Model
         'no',
         'supplier',
         'nama_barang',
+        'status_racikan',
         'jumlah',
         'tanggal_masuk',
         'tanggal_expired',
@@ -39,6 +40,46 @@ class Barang extends Model
     public function barangKeluarItems(): HasMany
     {
         return $this->hasMany(BarangKeluarItem::class, 'barang_id');
+    }
+
+    public static function getStatusRacikanOptions(): array
+    {
+        return [
+            'Non Racikan' => 'Non Racikan (Barang Biasa Siap Kirim)',
+            'Sudah Diracik' => 'Sudah Diracik (Barang Racikan Siap Kirim)',
+            'Belum Diracik' => 'Belum Diracik (Barang Dasar / Base)',
+            'Bahan Racik' => 'Bahan Racik (Bahan Campuran Meracik)',
+        ];
+    }
+
+    public function getStatusRacikanBadgeAttribute(): array
+    {
+        return match ($this->status_racikan) {
+            'Sudah Diracik' => [
+                'label' => 'Sudah Diracik',
+                'bg' => '#dbeafe',
+                'text' => '#1d4ed8',
+                'border' => '#93c5fd',
+            ],
+            'Belum Diracik' => [
+                'label' => 'Belum Diracik',
+                'bg' => '#fef3c7',
+                'text' => '#b45309',
+                'border' => '#fcd34d',
+            ],
+            'Bahan Racik' => [
+                'label' => 'Bahan Racik',
+                'bg' => '#f3e8ff',
+                'text' => '#7e22ce',
+                'border' => '#d8b4fe',
+            ],
+            default => [
+                'label' => 'Non Racikan',
+                'bg' => '#f1f5f9',
+                'text' => '#475569',
+                'border' => '#cbd5e1',
+            ],
+        };
     }
 
     /**

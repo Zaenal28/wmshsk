@@ -35,6 +35,7 @@ class TambahBarang extends Page implements HasForms
 
         $this->form->fill([
             'no' => $nextNo,
+            'status_racikan' => 'Non Racikan',
             'tanggal_masuk' => now()->format('Y-m-d'),
             'satuan' => 'Pcs',
             'jumlah' => 100,
@@ -66,6 +67,13 @@ class TambahBarang extends Page implements HasForms
                                 ->placeholder('Contoh: ACNE P - 0')
                                 ->required()
                                 ->maxLength(200),
+
+                            Select::make('status_racikan')
+                                ->label('Status / Tipe Racikan')
+                                ->options(fn (): array => Barang::getStatusRacikanOptions())
+                                ->default('Non Racikan')
+                                ->required()
+                                ->helperText('Pilih "Sudah Diracik" jika input stok racikan jadi tanpa lewat proses meracik.'),
 
                             TextInput::make('jumlah')
                                 ->label('Jumlah')

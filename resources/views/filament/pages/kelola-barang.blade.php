@@ -24,7 +24,21 @@
                 </div>
             </div>
 
-            <div class="flex items-center shrink-0">
+            <div class="flex flex-wrap items-center gap-2.5 shrink-0">
+                <button type="button"
+                        wire:click="bukaModalImport"
+                        class="inline-flex items-center gap-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-150">
+                    <x-filament::icon icon="heroicon-m-arrow-up-tray" class="w-4 h-4" />
+                    <span>Import Excel / CSV</span>
+                </button>
+
+                <a href="{{ \App\Filament\Pages\KelolaRacikan::getUrl() }}"
+                   wire:navigate
+                   class="inline-flex items-center gap-2 rounded-lg bg-purple-600 hover:bg-purple-700 active:bg-purple-800 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-150">
+                    <x-filament::icon icon="heroicon-m-beaker" class="w-4 h-4" />
+                    <span>Kelola Racikan</span>
+                </a>
+
                 <a href="{{ \App\Filament\Pages\TambahBarang::getUrl() }}"
                    wire:navigate
                    class="inline-flex items-center gap-2 rounded-lg bg-blue-600 hover:bg-blue-700 active:bg-blue-800 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-150">
@@ -52,13 +66,20 @@
                     @foreach ($this->barangs as $item)
                         @php
                             $status = $item->status_expired_info;
+                            $racikBadge = $item->status_racikan_badge;
                         @endphp
                         <tr>
                             <td class="font-mono text-xs font-bold text-slate-700 dark:text-slate-300 tracking-wider">
                                 {{ $item->no }}
                             </td>
                             <td class="font-semibold text-slate-900 dark:text-white tracking-tight">
-                                {{ $item->nama_barang }}
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <span>{{ $item->nama_barang }}</span>
+                                    <span style="background-color: {{ $racikBadge['bg'] }}; color: {{ $racikBadge['text'] }}; border: 1px solid {{ $racikBadge['border'] }};"
+                                          class="inline-flex items-center px-2 py-0.5 rounded-md text-[11px] font-bold">
+                                        {{ $racikBadge['label'] }}
+                                    </span>
+                                </div>
                             </td>
                             <td class="text-right font-semibold tabular-nums text-slate-800 dark:text-slate-200">
                                 {{ number_format($item->jumlah, 0, ',', '.') }}
@@ -147,4 +168,49 @@
             initTable();
         })();
     </script>
+
+    {{-- MODAL IMPORT EXCEL / CSV --}}
+    @if ($showImportModal)
+        <div class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
+            <div class="w-full max-w-lg rounded-xl bg-white dark:bg-gray-900 shadow-2xl border border-gray-200 dark:border-gray-700 overflow-hidden">
+                <div class="px-6 py-4 border-b border-gray-200 dark:border-gray-800 flex items-center justify-between">
+                    <h3 class="text-base font-bold text-gray-900 dark:text-white">Import Data Barang (Excel / CSV)</h3>
+                    <button type="button" wire:click="tutupModalImport" class="text-gray-400 hover:text-gray-600">
+                        <x-filament::icon icon="heroicon-m-x-mark" class="w-5 h-5" />
+                    </button>
+                </div>
+
+                <div class="p-6 space-y-4">
+                    <div class="text-xs text-gray-600 dark:text-gray-400 bg-slate-50 dark:bg-gray-800 p-3.5 rounded-lg border border-slate-200 dark:border-gray-700 leading-relaxed">
+                        <strong>Format Urutan Kolom:</strong><br />
+                        <code>No | Nama Barang | Tanggal masuk | Jenis atau Kategori Barang | alokasi penyimpanan | supplier | jumlah | tanngal expired | satuan | harga barang</code>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-1.5">
+                            Pilih File (.csv atau .xlsx)
+                        </label>
+                        <input type="file"
+                               wire:model="fileImport"
+                               accept=".csv,.xlsx"
+                               class="w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 px-3.5 py-2 text-sm text-gray-900 dark:text-white" />
+                        @error('fileImport') <span class="text-xs text-rose-600 mt-1 block">{{ $message }}</span> @enderror
+                    </div>
+                </div>
+
+                <div class="px-6 py-4 border-t border-gray-200 dark:border-gray-800 flex items-center justify-end gap-2">
+                    <button type="button"
+                            wire:click="tutupModalImport"
+                            class="rounded-lg border border-gray-300 dark:border-gray-700 px-4 py-2 text-xs font-semibold text-gray-700 dark:text-gray-200">
+                        Batal
+                    </button>
+                    <button type="button"
+                            wire:click="prosesImportFile"
+                            class="rounded-lg bg-emerald-600 hover:bg-emerald-700 px-5 py-2 text-xs font-bold text-white shadow-sm">
+                        Upload & Import Sekarang
+                    </button>
+                </div>
+            </div>
+        </div>
+    @endif
 </x-filament-panels::page>

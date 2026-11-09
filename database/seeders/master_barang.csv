@@ -1,0 +1,166 @@
+No,Nama Barang,Tanggal masuk,Jenis atau Kategori Barang,alokasi penyimpanan,supplier,jumlah,tanngal expired,satuan,harga barang
+001,Cleasing Oil,2012-10-09,Pembersih,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2027-12-12,pcs,100000
+002,Eye Make Up Remover,2012-10-10,Pembersih,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2027-12-13,pcs,100000
+003,Micellar Milk,2012-10-11,Pembersih,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2027-12-14,pcs,100000
+004,Micellar Water,2012-10-12,Pembersih,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2027-12-15,pcs,100000
+005,Milky Micellar,2012-10-13,Pembersih,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2027-12-16,pcs,100000
+006,Fw. Dry & sensitive,2012-10-14,Sabun,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2027-12-17,pcs,100000
+007,Fw. Oily,2012-10-15,Sabun,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2027-12-18,pcs,100000
+008,Fw. Foam,2012-10-16,Sabun,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2027-12-19,pcs,100000
+009,AA Sunscreen,2012-10-17,Sunblock,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2027-12-20,pcs,100000
+010,Acne Sun Protector,2012-10-18,Sunblock,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2027-12-21,pcs,100000
+011,Flawless Skin,2012-10-19,Sunblock,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2027-12-22,pcs,100000
+012,Glow Sunscreen,2012-10-20,Sunblock,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2027-12-23,pcs,100000
+013,Skin MTX,2012-10-21,Sunblock,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2027-12-24,pcs,100000
+014,SS Sunscreen,2012-10-22,Sunblock,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2027-12-25,pcs,100000
+015,Sunshield,2012-10-23,Sunblock,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2027-12-26,pcs,100000
+016,WL Sunscreen,2012-10-24,Sunblock,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2027-12-27,pcs,100000
+017,WN Sunscreen,2012-10-25,Sunblock,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2027-12-28,pcs,100000
+018,AC-2,2012-10-26,Pelembab,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2027-12-29,pcs,100000
+019,ACSB,2012-10-27,Pelembab,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2027-12-30,pcs,100000
+020,AH-1,2012-10-28,Pelembab,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2027-12-31,pcs,100000
+021,Essential Moist,2012-10-29,Pelembab,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-01,pcs,100000
+022,Glowing Gel,2012-10-30,Pelembab,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-02,pcs,100000
+023,Intensive Moist,2012-10-31,Pelembab,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-03,pcs,100000
+024,WP Moist,2012-11-01,Pelembab,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-04,pcs,100000
+025,AA Skin Booster,2012-11-02,Serum,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-05,pcs,100000
+026,AC-1,2012-11-03,Serum,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-06,pcs,100000
+027,AC-3,2012-11-04,Serum,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-07,pcs,100000
+028,LUMINOUS GOLD,2012-11-05,Serum,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-08,pcs,100000
+029,MS 2,2012-11-06,Serum,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-09,pcs,100000
+030,Radiant White,2012-11-07,Serum,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-10,pcs,100000
+031,SS Serum,2012-11-08,Serum,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-11,pcs,100000
+032,Wm Serum,2012-11-09,Serum,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-12,pcs,100000
+033,Acne Night Cream,2012-11-10,Cream Malam,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-13,pcs,100000
+034,Acne Reducer,2012-11-11,Cream Malam,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-14,pcs,100000
+035,Brightening Complex,2012-11-12,Cream Malam,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-15,pcs,100000
+036,LG-1 Night Cream,2012-11-13,Cream Malam,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-16,pcs,100000
+037,LG-2 Night Cream,2012-11-14,Cream Malam,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-17,pcs,100000
+038,LG-3 Night Cream,2012-11-15,Cream Malam,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-18,pcs,100000
+039,P-0 Night Cream,2012-11-16,Cream Malam,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-19,pcs,100000
+040,P-1 Night Cream,2012-11-17,Cream Malam,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-20,pcs,100000
+041,P-2 Night Cream,2012-11-18,Cream Malam,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-21,pcs,100000
+042,Shine & Bright,2012-11-19,Cream Malam,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-22,pcs,100000
+043,Brightening Toner,2012-11-20,Toner,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-23,pcs,100000
+044,Toner For Oily Skin,2012-11-21,Toner,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-24,pcs,100000
+045,Masker Acne Oles,2012-11-22,Makser,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-25,pcs,100000
+046,masker oksigen bening,2012-11-23,Makser,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-26,pcs,100000
+047,Masker Oksigen biru,2012-11-24,Makser,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-27,pcs,100000
+048,masker peel off huesday gold/gram,2012-11-25,Makser,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-28,pcs,100000
+049,masker peel off huesday white/gram,2012-11-26,Makser,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-29,pcs,100000
+050,Masker skin mtx aloevera hydro shooting,2012-11-27,Makser,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-30,pcs,100000
+051,Masker skin mtx milky whiteness,2012-11-28,Makser,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-01-31,pcs,100000
+052,Masker skin mtx sensitive calming,2012-11-29,Makser,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-02-01,pcs,100000
+053,Masker Vit C,2012-11-30,Makser,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-02-02,pcs,100000
+054,power oxygen (masker f acne),2012-12-01,Makser,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-02-03,pcs,100000
+055,GL 01 Padat,2012-12-02,Bedak,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-02-04,pcs,100000
+056,GL 02 Padat,2012-12-03,Bedak,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-02-05,pcs,100000
+057,Powder GL 01,2012-12-04,Bedak,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-02-06,pcs,100000
+058,Powder GL 02,2012-12-05,Bedak,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-02-07,pcs,100000
+059,Ac Expert,2012-12-06,Lainnya,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-02-08,pcs,100000
+060,Bio Gel (BTMO),2012-12-07,Lainnya,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-02-09,pcs,100000
+061,BMO Lotion,2012-12-08,Lainnya,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-02-10,pcs,100000
+062,BNS,2012-12-09,Lainnya,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-02-11,pcs,100000
+063,Cymi,2012-12-10,Lainnya,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-02-12,pcs,100000
+064,Demi Lotion,2012-12-11,Lainnya,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-02-13,pcs,100000
+065,HAGE,2012-12-12,Lainnya,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-02-14,pcs,100000
+066,Hand Body Lotion,2012-12-13,Lainnya,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-02-15,pcs,100000
+067,Shampoo,2012-12-14,Lainnya,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-02-16,pcs,100000
+068,Topicare Cream,2012-12-15,Lainnya,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-02-17,pcs,100000
+069,Under arm,2012-12-16,Lainnya,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-02-18,pcs,100000
+070,Veno c,2012-12-17,Lainnya,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-02-19,pcs,100000
+071,Axtan @30,2012-12-18,Obat,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-02-20,pcs,100000
+072,CUR,2012-12-19,Obat,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-02-21,pcs,100000
+073,EFC 1 @28,2012-12-20,Obat,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-02-22,pcs,100000
+074,FC9 @50,2012-12-21,Obat,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-02-23,pcs,100000
+075,lanadexon,2012-12-22,Obat,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-02-24,pcs,100000
+076,Levothyroxine @30,2012-12-23,Obat,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-02-25,pcs,100000
+077,Olibes @30,2012-12-24,Obat,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-02-26,pcs,100000
+078,Pan Hair @100,2012-12-25,Obat,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-02-27,pcs,100000
+079,Lanamol,2012-12-26,Obat,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-02-28,pcs,100000
+080,Glutasol,2012-12-27,Obat,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-02-29,pcs,100000
+081,Truxantine,2012-12-28,Obat,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-01,pcs,100000
+082,S-thione '30,2012-12-29,Obat,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-02,pcs,100000
+083,Zinc @30,2012-12-30,Obat,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-03,pcs,100000
+084,flutamol,2012-12-31,Obat,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-04,pcs,100000
+085,oshi sk,2013-01-01,Obat,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-05,pcs,100000
+086,Dohixat,2013-01-02,Obat,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-06,pcs,100000
+087,"concor 2,5 @100",2013-01-03,VIT,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-07,pcs,100000
+088,enzyme + probiotic,2013-01-04,VIT,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-08,pcs,100000
+089,Ester @30,2013-01-05,VIT,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-09,pcs,100000
+090,FOLATEN @30,2013-01-06,VIT,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-10,pcs,100000
+091,joint formula wellness @30,2013-01-07,VIT,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-11,pcs,100000
+092,MONECTO '20,2013-01-08,VIT,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-12,pcs,100000
+093,NH nano Calcium @60,2013-01-09,VIT,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-13,pcs,100000
+094,NP melantonin lozenges @60,2013-01-10,VIT,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-14,pcs,100000
+095,np VIT D3 1000IU,2013-01-11,VIT,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-15,pcs,100000
+096,omega 3 fish oil @75,2013-01-12,VIT,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-16,pcs,100000
+097,peptisol coklat,2013-01-13,VIT,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-17,pcs,100000
+098,peptisol vanilla,2013-01-14,VIT,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-18,pcs,100000
+099,Pharmaton @60,2013-01-15,VIT,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-19,pcs,100000
+100,plavix @28,2013-01-16,VIT,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-20,pcs,100000
+101,polysilane @40,2013-01-17,VIT,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-21,pcs,100000
+102,"pulmicort 0,25 mg",2013-01-18,VIT,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-22,pcs,100000
+103,rozet 10/20mg @30,2013-01-19,VIT,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-23,pcs,100000
+104,"ventolin 2,5mg",2013-01-20,VIT,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-24,pcs,100000
+105,zinc with vitamin B6 wellness @60,2013-01-21,VIT,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-25,pcs,100000
+106,ADS (cairan detox),2013-01-22,Treatment Equiement,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-26,pcs,100000
+107,Anastesi 500gr u/ 100 pasien,2013-01-23,Treatment Equiement,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-27,pcs,100000
+108,ASTRIGEN (cairan acne),2013-01-24,Treatment Equiement,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-28,pcs,100000
+109,Cream Massage,2013-01-25,Treatment Equiement,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-29,pcs,100000
+110,Gel IPL,2013-01-26,Treatment Equiement,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-30,pcs,100000
+111,Ion RX 1 untuk 20 Pasien,2013-01-27,Treatment Equiement,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-03-31,pcs,100000
+112,Ion RX 2 untuk 20 Pasien,2013-01-28,Treatment Equiement,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-04-01,pcs,100000
+113,Ion RX 5 untuk 20 Pasien,2013-01-29,Treatment Equiement,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-04-02,pcs,100000
+114,Power C u/12 pasien,2013-01-30,Treatment Equiement,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-04-03,pcs,100000
+115,Power Retinol u/15 pasien,2013-01-31,Treatment Equiement,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-04-04,pcs,100000
+116,purismart u/3 pasien,2013-02-01,Treatment Equiement,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-04-05,pcs,100000
+117,Radical White u/4 Pasien,2013-02-02,Treatment Equiement,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-04-06,pcs,100000
+118,redensifying prof prog (facial exosome),2013-02-03,Treatment Equiement,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-04-07,pcs,100000
+119,RF Cream,2013-02-04,Treatment Equiement,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-04-08,pcs,100000
+120,Skey enzympeel u/25 pasien,2013-02-05,Treatment Equiement,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-04-09,pcs,100000
+121,Telomatrik u/ 8 pasien,2013-02-06,Treatment Equiement,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-04-10,pcs,100000
+122,eye complex u/ 80 orang,2013-02-07,Korean Lux,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-04-11,pcs,100000
+123,hydra cool serum 15ml u/45 orang,2013-02-08,Korean Lux,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-04-12,pcs,100000
+124,LIP POLISH k-lux u/150 org,2013-02-09,Korean Lux,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-04-13,pcs,100000
+125,MASKER REJUVE u/ 40 orang,2013-02-10,Korean Lux,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-04-14,pcs,100000
+126,PEELING K-lux u/80 org,2013-02-11,Korean Lux,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-04-15,pcs,100000
+127,Pro health serum 15ml u/45 org,2013-02-12,Korean Lux,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-04-16,pcs,100000
+128,sunblock SBD,2013-02-13,Korean Lux,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-04-17,pcs,100000
+129,alas bed,2013-02-14,Kebutuhan Treatment,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-04-18,pcs,100000
+130,Carbon,2013-02-15,Kebutuhan Treatment,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-04-19,pcs,100000
+131,cutton bud,2013-02-16,Kebutuhan Treatment,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-04-20,pcs,100000
+132,Ear candle,2013-02-17,Kebutuhan Treatment,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-04-21,pcs,100000
+133,gel waxing,2013-02-18,Kebutuhan Treatment,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-04-22,pcs,100000
+134,Hairnet,2013-02-19,Kebutuhan Treatment,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-04-23,pcs,100000
+135,kapas 75 gr,2013-02-20,Kebutuhan Treatment,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-04-24,pcs,100000
+136,PROBE (VAGINA OZONE),2013-02-21,Kebutuhan Treatment,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-04-25,pcs,100000
+137,Tisu Masker,2013-02-22,Kebutuhan Treatment,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-04-26,pcs,100000
+138,AVZ,2013-02-23,Bahan Racik,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-04-27,pcs,100000
+139,BRU,2013-02-24,Bahan Racik,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-04-28,pcs,100000
+140,Clindamicin 150,2013-02-25,Bahan Racik,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-04-29,pcs,100000
+141,Clindamicin 300,2013-02-26,Bahan Racik,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-04-30,pcs,100000
+142,cincort,2013-02-27,Bahan Racik,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-05-01,pcs,100000
+143,cls,2013-02-28,Bahan Racik,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-05-02,pcs,100000
+144,DEMY CREAM,2013-03-01,Bahan Racik,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-05-03,pcs,100000
+145,DSR30g,2013-03-02,Bahan Racik,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-05-04,pcs,100000
+146,Glucy,2013-03-03,Bahan Racik,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-05-05,pcs,100000
+147,INS1,2013-03-04,Bahan Racik,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-05-06,pcs,100000
+148,INS5,2013-03-05,Bahan Racik,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-05-07,pcs,100000
+149,KSQ,2013-03-06,Bahan Racik,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-05-08,pcs,100000
+150,KSA1,2013-03-07,Bahan Racik,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-05-09,pcs,100000
+151,KSA2,2013-03-08,Bahan Racik,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-05-10,pcs,100000
+152,KSA3,2013-03-09,Bahan Racik,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-05-11,pcs,100000
+153,KSB3,2013-03-10,Bahan Racik,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-05-12,pcs,100000
+154,SP1,2013-03-11,Bahan Racik,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-05-13,pcs,100000
+155,SP2,2013-03-12,Bahan Racik,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-05-14,pcs,100000
+156,SP3,2013-03-13,Bahan Racik,Gudang Pusat Lt 1,PT BIO KUSUMA,100,2028-05-15,pcs,100000
+157,Mymask surgical face mask,2013-03-14,Bahan Racik,Gudang Pusat Lt 2,PT BIO KUSUMA,100,2028-05-16,pcs,100000
+158,See-U facial tissue,2013-03-15,Bahan Racik,Gudang Pusat Lt 3,PT BIO KUSUMA,100,2028-05-17,pcs,100000
+159,hand towel,2013-03-16,Bahan Racik,Gudang Pusat Lt 4,PT BIO KUSUMA,100,2028-05-18,pcs,100000
+160,Plenty bathroom rolls,2013-03-17,Bahan Racik,Gudang Pusat Lt 5,PT BIO KUSUMA,100,2028-05-19,pcs,100000
+161,SMO,2013-03-18,Bahan Racik,Gudang Pusat Lt 6,PT BIO KUSUMA,100,2028-05-20,pcs,100000
+162,WELLNESS starch blocker @60,2013-03-19,Bahan Racik,Gudang Pusat Lt 7,PT BIO KUSUMA,100,2028-05-21,pcs,100000
+163,Eqinon forte cream 15gr,2013-03-20,Bahan Racik,Gudang Pusat Lt 8,PT BIO KUSUMA,100,2028-05-22,pcs,100000
+164,"Reticor 0,1 15gr",2013-03-21,Bahan Racik,Gudang Pusat Lt 9,PT BIO KUSUMA,100,2028-05-23,pcs,100000
+165,Pology B niacinamide 125 gr,2013-03-22,Bahan Racik,Gudang Pusat Lt 10,PT BIO KUSUMA,100,2028-05-24,pcs,100000
