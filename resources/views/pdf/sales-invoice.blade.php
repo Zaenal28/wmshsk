@@ -5,7 +5,11 @@
     <title>Sales Invoice - {{ $invoice->no_invoice }}</title>
     <style>
         @page {
-            margin: 35px 40px;
+            size: 21cm 29.7cm;
+            margin-top: 3cm;
+            margin-right: 3cm;
+            margin-bottom: 3cm;
+            margin-left: 3cm;
         }
         body {
             font-family: Arial, Helvetica, sans-serif;

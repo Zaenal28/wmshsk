@@ -8,7 +8,7 @@
              alt="HSK Secret Logo"
              class="h-16 w-auto object-contain" />
         <span class="text-lg font-bold tracking-tight text-gray-950 dark:text-white">
-            WMS Gudang Pusat
+            Warehouese Managament System
         </span>
     </div>
 @else
@@ -17,7 +17,7 @@
              alt="HSK Secret Logo"
              class="h-9 w-auto object-contain shrink-0" />
         <span class="text-base font-bold tracking-tight text-gray-950 dark:text-white whitespace-nowrap">
-            WMS Gudang Pusat
+            WMS HSK SECRET
         </span>
     </div>
 @endif

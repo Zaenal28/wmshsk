@@ -5,7 +5,11 @@
     <title>Surat Jalan - {{ $data->no_surat }}</title>
     <style>
         @page {
-            margin: 35px 45px;
+            size: 21cm 29.7cm;
+            margin-top: 3cm;
+            margin-right: 3cm;
+            margin-bottom: 3cm;
+            margin-left: 3cm;
         }
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -173,6 +177,14 @@
                     <td colspan="5" class="text-center">Tidak ada daftar barang</td>
                 </tr>
             @endforelse
+            @if ($data->items->isNotEmpty())
+                <tr>
+                    <td colspan="2" style="text-align: right; font-weight: bold; font-size: 11px;">TOTAL</td>
+                    <td class="text-center" style="font-weight: bold;">{{ number_format($data->items->sum('jumlah'), 0, ',', '.') }}</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            @endif
         </tbody>
     </table>
 
