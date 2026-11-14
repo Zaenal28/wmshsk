@@ -2,6 +2,7 @@
 
 use App\Models\BarangKeluar;
 use App\Models\Invoice;
+use App\Models\PermintaanBarang;
 use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Support\Facades\Route;
 
@@ -49,4 +50,16 @@ Route::middleware(['web', 'auth'])->group(function () {
             'Cache-Control' => 'max-age=0',
         ]);
     })->name('kelola-invoice.excel');
+
+    Route::get('/admin/kelola-permintaan/{record}/pdf', function (int|string $record) {
+        $data = PermintaanBarang::with('items')->findOrFail($record);
+
+        $safeFilename = 'Surat-Permintaan-' . str_replace(['/', '\\', ' '], '-', $data->no_surat) . '.pdf';
+
+        $pdf = Pdf::loadView('pdf.surat-permintaan-barang', [
+            'data' => $data,
+        ])->setPaper('a4', 'portrait');
+
+        return $pdf->stream($safeFilename);
+    })->name('permintaan-barang.pdf');
 });

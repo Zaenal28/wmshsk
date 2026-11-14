@@ -274,8 +274,8 @@
                     </button>
                     <button type="button"
                             wire:click="tambahItemKeTabel"
-                            class="rounded-md bg-blue-600 hover:bg-blue-700 px-4 py-2 text-xs font-semibold text-white shadow-xs transition">
-                        Tambah
+                            class="rounded-md {{ $editingIndex >= 0 ? 'bg-amber-600 hover:bg-amber-700' : 'bg-blue-600 hover:bg-blue-700' }} px-4 py-2 text-xs font-semibold text-white shadow-xs transition">
+                        {{ $editingIndex >= 0 ? 'Update Item' : 'Tambah' }}
                     </button>
                 </div>
 
@@ -289,12 +289,12 @@
                                 <th class="py-2.5 px-4 border-r border-gray-200 dark:border-gray-700">No Barang / SKU</th>
                                 <th class="py-2.5 px-4 border-r border-gray-200 dark:border-gray-700">ED (Expired)</th>
                                 <th class="py-2.5 px-4 border-r border-gray-200 dark:border-gray-700 text-right">Jumlah</th>
-                                <th class="py-2.5 px-4 text-center w-28">Aksi</th>
+                                <th class="py-2.5 px-4 text-center w-36">Aksi</th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
                             @forelse ($items as $idx => $item)
-                                <tr class="hover:bg-slate-50/80 dark:hover:bg-gray-800/50">
+                                <tr class="{{ $editingIndex === $idx ? 'bg-amber-50 dark:bg-amber-950/30 ring-1 ring-amber-400' : 'hover:bg-slate-50/80 dark:hover:bg-gray-800/50' }}">
                                     <td class="py-2.5 px-4 border-r border-gray-200 dark:border-gray-700 font-mono text-xs font-bold">
                                         {{ $idx + 1 }}
                                     </td>
@@ -311,11 +311,18 @@
                                         {{ number_format((int) $item['jumlah'], 0, ',', '.') }}
                                     </td>
                                     <td class="py-2.5 px-4 text-center">
-                                        <button type="button"
-                                                wire:click="hapusItemDariTabel({{ $idx }})"
-                                                class="inline-flex items-center gap-1 rounded bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 px-2.5 py-1 text-xs font-semibold">
-                                            Hapus
-                                        </button>
+                                        <div class="inline-flex items-center gap-1.5 justify-center">
+                                            <button type="button"
+                                                    wire:click="editItemDariTabel({{ $idx }})"
+                                                    class="inline-flex items-center gap-1 rounded bg-amber-50 hover:bg-amber-100 text-amber-700 border border-amber-200 px-2.5 py-1 text-xs font-semibold transition">
+                                                Edit
+                                            </button>
+                                            <button type="button"
+                                                    wire:click="hapusItemDariTabel({{ $idx }})"
+                                                    class="inline-flex items-center gap-1 rounded bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 px-2.5 py-1 text-xs font-semibold transition">
+                                                Hapus
+                                            </button>
+                                        </div>
                                     </td>
                                 </tr>
                             @empty

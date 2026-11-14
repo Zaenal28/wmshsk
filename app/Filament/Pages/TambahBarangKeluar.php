@@ -33,6 +33,9 @@ class TambahBarangKeluar extends Page
     public int|string $input_jumlah = '';
     public int $stok_tersedia = 0;
 
+    // Indeks item yang sedang diedit (-1 jika mode tambah baru)
+    public int $editingIndex = -1;
+
     // Modal Pop-up Pencarian Barang (Referensi Gambar 2)
     public bool $showModalBarang = false;
     public string $searchModal = '';
@@ -130,12 +133,32 @@ class TambahBarangKeluar extends Page
 
     public function resetItemInput(): void
     {
+        $this->editingIndex = -1;
         $this->selected_barang_id = null;
         $this->input_no_barang = '';
         $this->input_nama_barang = '';
         $this->input_expired = '';
         $this->input_jumlah = '';
         $this->stok_tersedia = 0;
+    }
+
+    public function editItemDariTabel(int $index): void
+    {
+        if (isset($this->items[$index])) {
+            $this->editingIndex = $index;
+            $this->selected_barang_id = $this->items[$index]['barang_id'] ?? null;
+            $this->input_no_barang = (string) ($this->items[$index]['no_barang'] ?? '');
+            $this->input_nama_barang = (string) ($this->items[$index]['nama_barang'] ?? '');
+            $this->input_expired = (string) ($this->items[$index]['tanggal_expired'] ?? '');
+            $this->input_jumlah = $this->items[$index]['jumlah'] ?? '';
+
+            if ($this->selected_barang_id) {
+                $barang = Barang::find($this->selected_barang_id);
+                $this->stok_tersedia = $barang ? (int) $barang->jumlah : 0;
+            } else {
+                $this->stok_tersedia = 0;
+            }
+        }
     }
 
     public function tambahItemKeTabel(): void
@@ -168,7 +191,7 @@ class TambahBarangKeluar extends Page
             }
         }
 
-        $this->items[] = [
+        $payload = [
             'barang_id' => $this->selected_barang_id,
             'no_barang' => $this->input_no_barang ?: '-',
             'nama_barang' => $this->input_nama_barang,
@@ -176,12 +199,27 @@ class TambahBarangKeluar extends Page
             'jumlah' => $qty,
         ];
 
+        if ($this->editingIndex >= 0 && isset($this->items[$this->editingIndex])) {
+            $this->items[$this->editingIndex] = array_merge($this->items[$this->editingIndex], $payload);
+            Notification::make()
+                ->title('Item barang berhasil diperbarui di daftar.')
+                ->success()
+                ->send();
+        } else {
+            $this->items[] = $payload;
+        }
+
         $this->resetItemInput();
     }
 
     public function hapusItemDariTabel(int $index): void
     {
         if (isset($this->items[$index])) {
+            if ($this->editingIndex === $index) {
+                $this->resetItemInput();
+            } elseif ($this->editingIndex > $index) {
+                $this->editingIndex--;
+            }
             unset($this->items[$index]);
             $this->items = array_values($this->items);
         }
