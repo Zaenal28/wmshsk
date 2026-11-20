@@ -14,12 +14,22 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         $users = [
-            // 1. Super Admin / Gudang Pusat
+            // 1. Super Admin (Khusus Kelola Akun Pengguna)
             [
-                'name' => 'Gudang Pusat (Super Admin)',
+                'name' => 'Super Admin (Kelola Akun)',
+                'email' => 'superadmin@wms.com',
+                'password' => Hash::make('hsksecret0208'),
+                'role' => 'superadmin',
+                'cabang' => 'Super Admin',
+                'pic' => 'Super Admin',
+                'is_active' => true,
+            ],
+            // 2. Gudang Pusat (Khusus Portal Filament Admin /admin)
+            [
+                'name' => 'Admin Gudang Pusat',
                 'email' => 'gudangpusat@wms.com',
                 'password' => Hash::make('password123'),
-                'role' => 'superadmin',
+                'role' => 'gudang_pusat',
                 'cabang' => 'Gudang Pusat',
                 'pic' => 'Admin Gudang Pusat',
                 'is_active' => true,

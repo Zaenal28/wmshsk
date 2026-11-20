@@ -68,7 +68,7 @@
                   Edit
                 </button>
                 <button
-                  v-if="u.email !== 'gudangpusat@wms.com'"
+                  v-if="u.email !== 'gudangpusat@wms.com' && u.email !== 'superadmin@wms.com'"
                   @click="deleteUser(u)"
                   class="px-2.5 py-1 rounded-lg bg-rose-50 hover:bg-rose-100 text-rose-700 font-bold text-[11px] transition"
                 >
