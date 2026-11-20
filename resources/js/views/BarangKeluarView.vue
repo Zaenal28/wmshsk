@@ -333,22 +333,22 @@
       </div>
 
       <!-- Table -->
-      <div class="overflow-x-auto">
-        <table class="w-full text-left text-xs text-slate-600">
+      <div class="w-full">
+        <table class="w-full text-left text-xs text-slate-600 border-collapse">
           <thead class="bg-slate-50 text-slate-700 font-semibold uppercase text-[11px] border-b border-slate-200">
             <tr>
-              <th class="px-4 py-3 w-12 text-center">No</th>
-              <th class="px-4 py-3">No Surat</th>
-              <th class="px-4 py-3">Tanggal Keluar</th>
-              <th class="px-4 py-3 text-center">Jumlah Barang</th>
-              <th class="px-4 py-3">Tujuan</th>
-              <th class="px-4 py-3">PIC</th>
-              <th class="px-4 py-3 text-center w-48">Aksi</th>
+              <th class="px-3 py-3 w-12 text-center">No</th>
+              <th class="px-3 py-3 font-mono">No Surat</th>
+              <th class="px-3 py-3 whitespace-nowrap">Tanggal Keluar</th>
+              <th class="px-3 py-3 text-center whitespace-nowrap">Jumlah Barang</th>
+              <th class="px-3 py-3">Tujuan</th>
+              <th class="px-3 py-3">PIC</th>
+              <th class="px-3 py-3 text-center whitespace-nowrap w-40">Aksi</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-slate-100">
             <tr v-if="loading">
-              <td colspan="7" class="px-4 py-8 text-center text-slate-400">
+              <td colspan="7" class="px-3 py-8 text-center text-slate-400">
                 <div class="flex items-center justify-center gap-2">
                   <svg class="animate-spin w-4 h-4 text-blue-600" fill="none" viewBox="0 0 24 24">
                     <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
@@ -359,27 +359,27 @@
               </td>
             </tr>
             <tr v-else-if="filteredList.length === 0">
-              <td colspan="7" class="px-4 py-8 text-center text-slate-400">
+              <td colspan="7" class="px-3 py-8 text-center text-slate-400">
                 Tidak ada data transaksi barang keluar yang ditemukan.
               </td>
             </tr>
             <tr v-for="(row, idx) in filteredList" :key="row.id" class="hover:bg-slate-50 transition-colors">
-              <td class="px-4 py-3 text-center font-mono font-medium text-slate-500">{{ idx + 1 }}</td>
-              <td class="px-4 py-3 font-semibold text-slate-800 font-mono">{{ row.no_surat }}</td>
-              <td class="px-4 py-3 text-slate-600">{{ formatDate(row.tanggal_keluar) }}</td>
-              <td class="px-4 py-3 text-center">
+              <td class="px-3 py-3 text-center font-mono font-medium text-slate-500">{{ idx + 1 }}</td>
+              <td class="px-3 py-3 font-semibold text-slate-800 font-mono">{{ row.no_surat }}</td>
+              <td class="px-3 py-3 text-slate-600 whitespace-nowrap">{{ formatDate(row.tanggal_keluar) }}</td>
+              <td class="px-3 py-3 text-center whitespace-nowrap">
                 <span class="inline-block px-2.5 py-0.5 rounded-full text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
                   {{ row.total_jumlah }}
                 </span>
               </td>
-              <td class="px-4 py-3">
+              <td class="px-3 py-3">
                 <span class="font-medium text-slate-800">{{ row.tujuan }}</span>
                 <span v-if="row.nama_penerima" class="block text-[11px] text-slate-400">
                   Penerima: {{ row.nama_penerima }}
                 </span>
               </td>
-              <td class="px-4 py-3 text-slate-700 font-medium">{{ row.pic }}</td>
-              <td class="px-4 py-3 text-center">
+              <td class="px-3 py-3 text-slate-700 font-medium">{{ row.pic }}</td>
+              <td class="px-3 py-3 text-center whitespace-nowrap">
                 <div class="flex items-center justify-center gap-1.5">
                   <!-- Cetak PDF Surat Jalan -->
                   <button

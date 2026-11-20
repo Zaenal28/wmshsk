@@ -1,7 +1,7 @@
 <template>
-  <div class="p-8">
+  <div class="space-y-6 w-full">
     <!-- Header Page -->
-    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
       <div>
         <h1 class="text-2xl font-bold text-slate-900 tracking-tight">Kelola Akun Pengguna</h1>
         <p class="text-xs text-slate-500 mt-1">Super Admin Dashboard untuk mengelola akun cabang, role, dan hak akses WMS.</p>
@@ -18,7 +18,7 @@
     </div>
 
     <!-- Filter & Search Bar -->
-    <div class="bg-white rounded-2xl border border-slate-200/80 shadow-sm p-4 mb-6">
+    <div class="bg-white rounded-2xl border border-slate-200/80 shadow-sm p-4">
       <div class="relative max-w-md">
         <input
           v-model="search"
@@ -35,53 +35,55 @@
 
     <!-- Table Users -->
     <div class="bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden">
-      <table class="w-full text-left border-collapse">
-        <thead>
-          <tr class="bg-slate-50/75 border-b border-slate-200/80 text-[11px] font-bold text-slate-500 uppercase tracking-wider">
-            <th class="py-3 px-4 w-12 text-center">No</th>
-            <th class="py-3 px-4">Nama User / Akun</th>
-            <th class="py-3 px-4">Alamat Email</th>
-            <th class="py-3 px-4">Cabang</th>
-            <th class="py-3 px-4">Role Hak Akses</th>
-            <th class="py-3 px-4">PIC</th>
-            <th class="py-3 px-4 text-center w-36">Aksi</th>
-          </tr>
-        </thead>
-        <tbody class="divide-y divide-slate-100 text-xs">
-          <tr v-for="(u, index) in users" :key="u.id" class="hover:bg-slate-50/50 transition">
-            <td class="py-3 px-4 text-center font-mono text-slate-400">{{ index + 1 }}</td>
-            <td class="py-3 px-4 font-bold text-slate-900">{{ u.name }}</td>
-            <td class="py-3 px-4 font-mono text-slate-600">{{ u.email }}</td>
-            <td class="py-3 px-4 font-semibold text-slate-700">{{ u.cabang || '-' }}</td>
-            <td class="py-3 px-4">
-              <span :class="getRoleBadge(u.role)" class="px-2.5 py-1 rounded-lg text-[10px] font-bold tracking-wide uppercase">
-                {{ formatRole(u.role) }}
-              </span>
-            </td>
-            <td class="py-3 px-4 text-slate-600">{{ u.pic || '-' }}</td>
-            <td class="py-3 px-4 text-center">
-              <div class="inline-flex items-center gap-1.5">
-                <button
-                  @click="openModalEdit(u)"
-                  class="px-2.5 py-1 rounded-lg bg-blue-50 hover:bg-blue-100 text-blue-700 font-bold text-[11px] transition"
-                >
-                  Edit
-                </button>
-                <button
-                  v-if="u.email !== 'gudangpusat@wms.com' && u.email !== 'superadmin@wms.com'"
-                  @click="deleteUser(u)"
-                  class="px-2.5 py-1 rounded-lg bg-rose-50 hover:bg-rose-100 text-rose-700 font-bold text-[11px] transition"
-                >
-                  Hapus
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr v-if="users.length === 0">
-            <td colspan="7" class="py-8 text-center text-slate-400 text-xs font-medium">Tidak ada data pengguna yang ditemukan.</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="w-full">
+        <table class="w-full text-left border-collapse text-xs">
+          <thead>
+            <tr class="bg-slate-50/75 border-b border-slate-200/80 text-[11px] font-bold text-slate-500 uppercase tracking-wider">
+              <th class="py-3 px-3 w-12 text-center">No</th>
+              <th class="py-3 px-3">Nama User / Akun</th>
+              <th class="py-3 px-3">Alamat Email</th>
+              <th class="py-3 px-3">Cabang</th>
+              <th class="py-3 px-3 whitespace-nowrap">Role Hak Akses</th>
+              <th class="py-3 px-3">PIC</th>
+              <th class="py-3 px-3 text-center whitespace-nowrap w-32">Aksi</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr v-for="(u, index) in users" :key="u.id" class="hover:bg-slate-50/50 transition">
+              <td class="py-3 px-3 text-center font-mono text-slate-400">{{ index + 1 }}</td>
+              <td class="py-3 px-3 font-bold text-slate-900">{{ u.name }}</td>
+              <td class="py-3 px-3 font-mono text-slate-600">{{ u.email }}</td>
+              <td class="py-3 px-3 font-semibold text-slate-700">{{ u.cabang || '-' }}</td>
+              <td class="py-3 px-3 whitespace-nowrap">
+                <span :class="getRoleBadge(u.role)" class="px-2.5 py-1 rounded-lg text-[10px] font-bold tracking-wide uppercase">
+                  {{ formatRole(u.role) }}
+                </span>
+              </td>
+              <td class="py-3 px-3 text-slate-600">{{ u.pic || '-' }}</td>
+              <td class="py-3 px-3 text-center whitespace-nowrap">
+                <div class="inline-flex items-center gap-1.5">
+                  <button
+                    @click="openModalEdit(u)"
+                    class="px-2.5 py-1 rounded-lg bg-blue-50 hover:bg-blue-100 text-blue-700 font-bold text-[11px] transition"
+                  >
+                    Edit
+                  </button>
+                  <button
+                    v-if="u.email !== 'gudangpusat@wms.com' && u.email !== 'superadmin@wms.com'"
+                    @click="deleteUser(u)"
+                    class="px-2.5 py-1 rounded-lg bg-rose-50 hover:bg-rose-100 text-rose-700 font-bold text-[11px] transition"
+                  >
+                    Hapus
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr v-if="users.length === 0">
+              <td colspan="7" class="py-8 text-center text-slate-400 text-xs font-medium">Tidak ada data pengguna yang ditemukan.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <!-- Modal Form (Create / Edit) -->

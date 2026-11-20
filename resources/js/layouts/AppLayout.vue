@@ -89,7 +89,7 @@
 
     <!-- Main Content Area -->
     <main class="flex-1 min-w-0 overflow-y-auto">
-      <div class="p-6 md:p-8 max-w-7xl mx-auto">
+      <div class="p-4 md:p-6 lg:p-8 w-full">
         <slot />
       </div>
     </main>

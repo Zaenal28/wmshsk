@@ -1,5 +1,5 @@
 <template>
-  <div class="p-6 md:p-8 space-y-6">
+  <div class="space-y-6 w-full">
     <!-- Header Page -->
     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
       <div>
@@ -144,23 +144,23 @@
         </span>
       </div>
 
-      <div class="overflow-x-auto">
+      <div class="w-full">
         <table class="w-full text-left border-collapse text-xs">
           <thead>
-            <tr class="bg-slate-50/75 border-b border-slate-200/80 text-[11px] font-bold text-slate-500 uppercase tracking-wider whitespace-nowrap">
-              <th class="py-3 px-4 w-12 text-center">No</th>
-              <th class="py-3 px-4">Nama Barang</th>
-              <th class="py-3 px-4">Tanggal Masuk</th>
-              <th class="py-3 px-4">Expired</th>
-              <th class="py-3 px-4">Masa Berlaku</th>
-              <th class="py-3 px-4 text-center">Status Expired</th>
-              <th class="py-3 px-4">Jenis/Kategori</th>
-              <th class="py-3 px-4 text-right">Jumlah</th>
-              <th class="py-3 px-4">Supplier</th>
-              <th class="py-3 px-4 text-center w-28">Aksi</th>
+            <tr class="bg-slate-50/75 border-b border-slate-200/80 text-[11px] font-bold text-slate-500 uppercase tracking-wider">
+              <th class="py-3 px-3 w-12 text-center">No</th>
+              <th class="py-3 px-3">Nama Barang</th>
+              <th class="py-3 px-3 whitespace-nowrap">Tanggal Masuk</th>
+              <th class="py-3 px-3 whitespace-nowrap">Expired</th>
+              <th class="py-3 px-3">Masa Berlaku</th>
+              <th class="py-3 px-3 text-center whitespace-nowrap">Status Expired</th>
+              <th class="py-3 px-3">Jenis/Kategori</th>
+              <th class="py-3 px-3 text-right whitespace-nowrap">Jumlah</th>
+              <th class="py-3 px-3">Supplier</th>
+              <th class="py-3 px-3 text-center whitespace-nowrap w-24">Aksi</th>
             </tr>
           </thead>
-          <tbody class="divide-y divide-slate-100 whitespace-nowrap">
+          <tbody class="divide-y divide-slate-100">
             <tr v-if="loading">
               <td colspan="10" class="py-8 text-center text-slate-400">
                 <div class="flex items-center justify-center gap-2">
@@ -178,14 +178,14 @@
               </td>
             </tr>
             <tr v-for="(b, idx) in displayBarangs" :key="b.id" class="hover:bg-slate-50/60 transition">
-              <td class="py-3 px-4 text-center font-mono text-slate-400">{{ b.no || idx + 1 }}</td>
-              <td class="py-3 px-4 font-bold text-slate-900">
+              <td class="py-3 px-3 text-center font-mono text-slate-400">{{ b.no || idx + 1 }}</td>
+              <td class="py-3 px-3 font-bold text-slate-900">
                 {{ b.nama_barang }}
               </td>
-              <td class="py-3 px-4 tabular-nums text-slate-600">{{ formatDate(b.tanggal_masuk) }}</td>
-              <td class="py-3 px-4 tabular-nums text-slate-600">{{ formatDate(b.tanggal_expired) }}</td>
-              <td class="py-3 px-4 font-medium text-slate-600">{{ b.masa_berlaku || '-' }}</td>
-              <td class="py-3 px-4 text-center">
+              <td class="py-3 px-3 tabular-nums text-slate-600 whitespace-nowrap">{{ formatDate(b.tanggal_masuk) }}</td>
+              <td class="py-3 px-3 tabular-nums text-slate-600 whitespace-nowrap">{{ formatDate(b.tanggal_expired) }}</td>
+              <td class="py-3 px-3 font-medium text-slate-600">{{ b.masa_berlaku || '-' }}</td>
+              <td class="py-3 px-3 text-center whitespace-nowrap">
                 <!-- Status Badge Sesuai Ketentuan -->
                 <span
                   :class="b.status_expired_info?.class || 'bg-slate-100 text-slate-700'"
@@ -195,12 +195,12 @@
                   <span>{{ b.status_expired_info?.label || '-' }}</span>
                 </span>
               </td>
-              <td class="py-3 px-4 text-slate-600">{{ b.kategori || '-' }}</td>
-              <td class="py-3 px-4 text-right font-bold tabular-nums text-slate-900">
+              <td class="py-3 px-3 text-slate-600">{{ b.kategori || '-' }}</td>
+              <td class="py-3 px-3 text-right font-bold tabular-nums text-slate-900 whitespace-nowrap">
                 {{ (b.jumlah || 0).toLocaleString('id-ID') }}
               </td>
-              <td class="py-3 px-4 text-slate-600">{{ b.supplier || '-' }}</td>
-              <td class="py-3 px-4 text-center">
+              <td class="py-3 px-3 text-slate-600">{{ b.supplier || '-' }}</td>
+              <td class="py-3 px-3 text-center whitespace-nowrap">
                 <div class="inline-flex items-center gap-1.5">
                   <button
                     @click="openModalEdit(b)"
