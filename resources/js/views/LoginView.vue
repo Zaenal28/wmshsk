@@ -58,13 +58,13 @@
         <p class="text-[10px] font-bold text-slate-400 text-center uppercase tracking-wider mb-2.5">Pilih Cepat Akun Login</p>
         <div class="grid grid-cols-2 gap-2 text-[10px]">
           <!-- Gudang Pusat -->
-          <button
-            @click="quickFill('gudangpusat@wms.com', 'password123')"
-            type="button"
-            class="p-2 rounded-xl bg-amber-50/80 hover:bg-amber-100 text-amber-900 font-bold text-left truncate border border-amber-200 transition"
+          <a
+            href="/admin/login"
+            class="p-2 rounded-xl bg-amber-50/80 hover:bg-amber-100 text-amber-900 font-bold text-left truncate border border-amber-200 transition flex items-center justify-between"
           >
-            🏛️ Gudang Pusat
-          </button>
+            <span>🏛️ Gudang Pusat</span>
+            <span class="text-[9px] font-semibold text-amber-700 bg-amber-200/60 px-1.5 py-0.5 rounded">/admin</span>
+          </a>
           <!-- Super Admin -->
           <button
             @click="quickFill('superadmin@wms.com', 'hsksecret0208')"
@@ -122,23 +122,20 @@ const quickFill = (e, p) => {
   password.value = p;
 };
 
-onMounted(async () => {
-  // Jika user yang tersimpan adalah Gudang Pusat dan masih terautentikasi, langsung bawa ke /admin
+onMounted(() => {
+  // Jika tersimpan akun Gudang Pusat di browser SPA, bersihkan agar tidak rancu
   if (authStore.user?.role === 'gudang_pusat' || authStore.user?.email === 'gudangpusat@wms.com') {
-    try {
-      const res = await api.get('/me');
-      if (res.data?.user?.role === 'gudang_pusat' || res.data?.user?.email === 'gudangpusat@wms.com') {
-        window.location.replace('/admin');
-        return;
-      }
-    } catch {
-      // Jika session sudah logout/kedaluwarsa, bersihkan sisa kredensial di browser
-      authStore.logout();
-    }
+    authStore.logout();
   }
 });
 
 const handleLogin = async () => {
+  // Jika memasukkan email Gudang Pusat, arahkan langsung ke halaman login resmi Gudang Pusat (/admin/login)
+  if (email.value.trim().toLowerCase() === 'gudangpusat@wms.com') {
+    window.location.href = '/admin/login';
+    return;
+  }
+
   loading.value = true;
   errorMessage.value = '';
 
@@ -146,20 +143,13 @@ const handleLogin = async () => {
   loading.value = false;
 
   if (res.success) {
-    // 1. Jika user adalah Gudang Pusat, ganti riwayat browser (replace) langsung ke portal Filament (/admin)
-    // Menggunakan location.replace agar halaman /login tidak tersimpan di tombol 'Back' browser
-    if (authStore.user?.role === 'gudang_pusat' || authStore.user?.email === 'gudangpusat@wms.com') {
-      window.location.replace('/admin');
-      return;
-    }
-
-    // 2. Jika Super Admin, arahkan ke Kelola Akun User (/users)
+    // 1. Jika Super Admin, arahkan ke Kelola Akun User (/users)
     if (authStore.isSuperAdmin) {
       router.replace('/users');
       return;
     }
 
-    // 3. Jika Cabang, arahkan ke Kelola Barang Masuk (/barang-masuk)
+    // 2. Jika Cabang, arahkan ke Kelola Barang Masuk (/barang-masuk)
     router.replace('/barang-masuk');
   } else {
     errorMessage.value = res.message;

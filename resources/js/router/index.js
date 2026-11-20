@@ -64,17 +64,20 @@ router.beforeEach(async (to, from, next) => {
 
   // Jika ada token tersimpan tapi data user belum di-load
   if (authStore.token && !authStore.user) {
-    await authStore.fetchUser();
+    await authStore.fetchMe();
+  }
+
+  // Jika user adalah Gudang Pusat, mereka khusus untuk portal Filament /admin
+  if (authStore.user?.role === 'gudang_pusat' || authStore.user?.email === 'gudangpusat@wms.com') {
+    authStore.logout();
+    window.location.replace('/admin');
+    return;
   }
 
   const isAuthenticated = authStore.isAuthenticated;
 
   // Halaman khusus tamu (contoh: /login)
   if (to.meta.guestOnly && isAuthenticated) {
-    if (authStore.user?.role === 'gudang_pusat' || authStore.user?.email === 'gudangpusat@wms.com') {
-      window.location.replace('/admin');
-      return;
-    }
     if (authStore.isSuperAdmin) {
       return next({ name: 'users' });
     }
