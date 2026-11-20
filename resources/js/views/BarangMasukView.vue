@@ -112,113 +112,103 @@
               v-if="statusFilter"
               @click="statusFilter = ''"
               type="button"
-              class="text-xs text-blue-600 hover:text-blue-800 font-semibold underline ml-1"
+              class="text-xs text-blue-600 hover:text-blue-800 font-semibold underline ml-1 cursor-pointer"
             >
               ✕ Hapus Filter
             </button>
           </div>
         </div>
-
-        <!-- Search Input -->
-        <div class="relative w-full lg:w-72 shrink-0">
-          <input
-            v-model="search"
-            type="text"
-            placeholder="Cari SKU, nama, kategori..."
-            class="w-full pl-9 pr-4 py-2 rounded-xl border border-slate-300 text-xs focus:border-blue-600 focus:ring-2 focus:ring-blue-100 outline-none"
-          />
-          <svg class="w-4 h-4 text-slate-400 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-          </svg>
-        </div>
       </div>
     </div>
 
-    <!-- Table Data Barang -->
-    <div class="bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden">
-      <!-- Bar Info Jumlah Data -->
-      <div class="px-5 py-3 border-b border-slate-100 bg-slate-50/50 flex items-center justify-between text-xs">
-        <span class="text-slate-500">
-          Menampilkan: <strong class="text-slate-800">{{ displayBarangs.length }}</strong> dari total <strong class="text-slate-800">{{ barangs.length }}</strong> barang
-          <span v-if="statusFilter" class="ml-1 font-semibold text-blue-600">(Filter: Status {{ statusFilter }})</span>
-        </span>
+    <!-- Table Data Barang via DataTables.net -->
+    <div class="bg-white rounded-2xl border border-slate-200/80 shadow-sm p-4 overflow-hidden">
+      <div v-if="loading" class="py-12 text-center text-slate-400">
+        <div class="flex items-center justify-center gap-2">
+          <svg class="animate-spin w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
+          </svg>
+          <span class="text-xs font-medium">Memuat data barang masuk...</span>
+        </div>
       </div>
 
-      <div class="w-full">
-        <table class="w-full text-left border-collapse text-xs">
-          <thead>
-            <tr class="bg-slate-50/75 border-b border-slate-200/80 text-[11px] font-bold text-slate-500 uppercase tracking-wider">
-              <th class="py-3 px-3 w-12 text-center">No</th>
-              <th class="py-3 px-3">Nama Barang</th>
-              <th class="py-3 px-3 whitespace-nowrap">Tanggal Masuk</th>
-              <th class="py-3 px-3 whitespace-nowrap">Expired</th>
-              <th class="py-3 px-3">Masa Berlaku</th>
-              <th class="py-3 px-3 text-center whitespace-nowrap">Status Expired</th>
-              <th class="py-3 px-3">Jenis/Kategori</th>
-              <th class="py-3 px-3 text-right whitespace-nowrap">Jumlah</th>
-              <th class="py-3 px-3">Supplier</th>
-              <th class="py-3 px-3 text-center whitespace-nowrap w-24">Aksi</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-slate-100">
-            <tr v-if="loading">
-              <td colspan="10" class="py-8 text-center text-slate-400">
-                <div class="flex items-center justify-center gap-2">
-                  <svg class="animate-spin w-4 h-4 text-blue-600" fill="none" viewBox="0 0 24 24">
-                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
-                  </svg>
-                  <span>Memuat data barang masuk...</span>
-                </div>
-              </td>
-            </tr>
-            <tr v-else-if="displayBarangs.length === 0">
-              <td colspan="10" class="py-8 text-center text-slate-400 italic">
-                Tidak ada data barang yang sesuai dengan pencarian atau filter.
-              </td>
-            </tr>
-            <tr v-for="(b, idx) in displayBarangs" :key="b.id" class="hover:bg-slate-50/60 transition">
-              <td class="py-3 px-3 text-center font-mono text-slate-400">{{ b.no || idx + 1 }}</td>
-              <td class="py-3 px-3 font-bold text-slate-900">
-                {{ b.nama_barang }}
-              </td>
-              <td class="py-3 px-3 tabular-nums text-slate-600 whitespace-nowrap">{{ formatDate(b.tanggal_masuk) }}</td>
-              <td class="py-3 px-3 tabular-nums text-slate-600 whitespace-nowrap">{{ formatDate(b.tanggal_expired) }}</td>
-              <td class="py-3 px-3 font-medium text-slate-600">{{ b.masa_berlaku || '-' }}</td>
-              <td class="py-3 px-3 text-center whitespace-nowrap">
-                <!-- Status Badge Sesuai Ketentuan -->
-                <span
-                  :class="b.status_expired_info?.class || 'bg-slate-100 text-slate-700'"
-                  class="px-2.5 py-1 rounded-full text-[11px] font-semibold tracking-wide inline-flex items-center gap-1.5 shadow-xs"
-                >
-                  <span class="w-1.5 h-1.5 rounded-full" :style="{ backgroundColor: b.status_expired_info?.dot || 'currentColor' }"></span>
-                  <span>{{ b.status_expired_info?.label || '-' }}</span>
-                </span>
-              </td>
-              <td class="py-3 px-3 text-slate-600">{{ b.kategori || '-' }}</td>
-              <td class="py-3 px-3 text-right font-bold tabular-nums text-slate-900 whitespace-nowrap">
-                {{ (b.jumlah || 0).toLocaleString('id-ID') }}
-              </td>
-              <td class="py-3 px-3 text-slate-600">{{ b.supplier || '-' }}</td>
-              <td class="py-3 px-3 text-center whitespace-nowrap">
-                <div class="inline-flex items-center gap-1.5">
-                  <button
-                    @click="openModalEdit(b)"
-                    class="px-2.5 py-1 rounded-lg bg-blue-50 hover:bg-blue-100 text-blue-700 font-bold text-[11px] transition"
-                  >
-                    Edit
-                  </button>
-                  <button
-                    @click="deleteBarang(b)"
-                    class="px-2.5 py-1 rounded-lg bg-rose-50 hover:bg-rose-100 text-rose-700 font-bold text-[11px] transition"
-                  >
-                    Hapus
-                  </button>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <div v-show="!loading" class="w-full">
+        <DataTable
+          :data="displayBarangs"
+          :columns="columns"
+          :options="dtOptions"
+          class="display stripe hover w-full text-xs"
+        >
+          <!-- Slot No -->
+          <template #col-no="{ rowData, rowIndex }">
+            <span class="font-mono text-slate-400 font-medium">{{ rowData.no || (rowIndex + 1) }}</span>
+          </template>
+
+          <!-- Slot Nama Barang -->
+          <template #col-nama="{ rowData }">
+            <span class="font-bold text-slate-900">{{ rowData.nama_barang }}</span>
+          </template>
+
+          <!-- Slot Tanggal Masuk -->
+          <template #col-tgl-masuk="{ rowData }">
+            <span class="tabular-nums text-slate-600 whitespace-nowrap">{{ formatDate(rowData.tanggal_masuk) }}</span>
+          </template>
+
+          <!-- Slot Expired -->
+          <template #col-expired="{ rowData }">
+            <span class="tabular-nums text-slate-600 whitespace-nowrap">{{ formatDate(rowData.tanggal_expired) }}</span>
+          </template>
+
+          <!-- Slot Masa Berlaku -->
+          <template #col-masa-berlaku="{ rowData }">
+            <span class="font-medium text-slate-600">{{ rowData.masa_berlaku || '-' }}</span>
+          </template>
+
+          <!-- Slot Status Expired -->
+          <template #col-status="{ rowData }">
+            <span
+              :class="rowData.status_expired_info?.class || 'bg-slate-100 text-slate-700'"
+              class="px-2.5 py-1 rounded-full text-[11px] font-semibold tracking-wide inline-flex items-center gap-1.5 shadow-xs whitespace-nowrap"
+            >
+              <span class="w-1.5 h-1.5 rounded-full" :style="{ backgroundColor: rowData.status_expired_info?.dot || 'currentColor' }"></span>
+              <span>{{ rowData.status_expired_info?.label || '-' }}</span>
+            </span>
+          </template>
+
+          <!-- Slot Kategori -->
+          <template #col-kategori="{ rowData }">
+            <span class="text-slate-600">{{ rowData.kategori || '-' }}</span>
+          </template>
+
+          <!-- Slot Jumlah -->
+          <template #col-jumlah="{ rowData }">
+            <span class="font-bold tabular-nums text-slate-900">{{ (rowData.jumlah || 0).toLocaleString('id-ID') }}</span>
+          </template>
+
+          <!-- Slot Supplier -->
+          <template #col-supplier="{ rowData }">
+            <span class="text-slate-600">{{ rowData.supplier || '-' }}</span>
+          </template>
+
+          <!-- Slot Aksi -->
+          <template #col-aksi="{ rowData }">
+            <div class="inline-flex items-center gap-1.5 whitespace-nowrap">
+              <button
+                @click="openModalEdit(rowData)"
+                class="px-2.5 py-1 rounded-lg bg-blue-50 hover:bg-blue-100 text-blue-700 font-bold text-[11px] transition cursor-pointer"
+              >
+                Edit
+              </button>
+              <button
+                @click="deleteBarang(rowData)"
+                class="px-2.5 py-1 rounded-lg bg-rose-50 hover:bg-rose-100 text-rose-700 font-bold text-[11px] transition cursor-pointer"
+              >
+                Hapus
+              </button>
+            </div>
+          </template>
+        </DataTable>
       </div>
     </div>
 
@@ -288,15 +278,36 @@
 import { ref, computed, onMounted } from 'vue';
 import { useAuthStore } from '../stores/auth';
 import api from '../services/api';
+import { DataTable, defaultDtOptions } from '../services/datatables';
 
 const authStore = useAuthStore();
 const barangs = ref([]);
-const search = ref('');
 const statusFilter = ref('');
 const loading = ref(false);
 const showModal = ref(false);
 const isEditing = ref(false);
 const currentId = ref(null);
+
+const dtOptions = {
+  ...defaultDtOptions,
+  searching: true,
+  paging: true,
+  info: true,
+  order: [[0, 'asc']],
+};
+
+const columns = [
+  { data: 'no', title: 'No', render: '#col-no', className: 'text-center' },
+  { data: 'nama_barang', title: 'Nama Barang', render: '#col-nama' },
+  { data: 'tanggal_masuk', title: 'Tanggal Masuk', render: '#col-tgl-masuk' },
+  { data: 'tanggal_expired', title: 'Expired', render: '#col-expired' },
+  { data: 'masa_berlaku', title: 'Masa Berlaku', render: '#col-masa-berlaku' },
+  { data: 'status_expired', title: 'Status Expired', render: '#col-status', className: 'text-center' },
+  { data: 'kategori', title: 'Jenis/Kategori', render: '#col-kategori' },
+  { data: 'jumlah', title: 'Jumlah', render: '#col-jumlah', className: 'text-right' },
+  { data: 'supplier', title: 'Supplier', render: '#col-supplier' },
+  { data: null, title: 'Aksi', render: '#col-aksi', orderable: false, searchable: false, className: 'text-center' },
+];
 
 const form = ref({
   no: '',
@@ -321,21 +332,11 @@ const countByStatus = computed(() => {
   return counts;
 });
 
-// Filter list berdasarkan teks pencarian dan filter status (jika dipilih)
+// Filter list berdasarkan status (DataTables menangani pencarian & paginasi secara mandiri)
 const displayBarangs = computed(() => {
   return barangs.value.filter((b) => {
-    // 1. Filter Status
     if (statusFilter.value && b.status_expired_info?.label !== statusFilter.value) {
       return false;
-    }
-    // 2. Filter Search query
-    if (search.value.trim()) {
-      const q = search.value.trim().toLowerCase();
-      const matchName = b.nama_barang?.toLowerCase().includes(q);
-      const matchNo = b.no?.toLowerCase().includes(q);
-      const matchKat = b.kategori?.toLowerCase().includes(q);
-      const matchSup = b.supplier?.toLowerCase().includes(q);
-      return matchName || matchNo || matchKat || matchSup;
     }
     return true;
   });

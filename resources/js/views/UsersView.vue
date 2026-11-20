@@ -17,72 +17,76 @@
       </button>
     </div>
 
-    <!-- Filter & Search Bar -->
-    <div class="bg-white rounded-2xl border border-slate-200/80 shadow-sm p-4">
-      <div class="relative max-w-md">
-        <input
-          v-model="search"
-          @input="fetchUsers"
-          type="text"
-          placeholder="Cari nama akun, email, atau cabang..."
-          class="w-full pl-9 pr-4 py-2 rounded-xl border border-slate-300 text-xs focus:border-blue-600 focus:ring-2 focus:ring-blue-100 outline-none"
-        />
-        <svg class="w-4 h-4 text-slate-400 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-        </svg>
+    <!-- Table Users via DataTables.net -->
+    <div class="bg-white rounded-2xl border border-slate-200/80 shadow-sm p-4 overflow-hidden">
+      <div v-if="loading" class="py-12 text-center text-slate-400">
+        <div class="flex items-center justify-center gap-2">
+          <svg class="animate-spin w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
+          </svg>
+          <span class="text-xs font-medium">Memuat data pengguna...</span>
+        </div>
       </div>
-    </div>
 
-    <!-- Table Users -->
-    <div class="bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden">
-      <div class="w-full">
-        <table class="w-full text-left border-collapse text-xs">
-          <thead>
-            <tr class="bg-slate-50/75 border-b border-slate-200/80 text-[11px] font-bold text-slate-500 uppercase tracking-wider">
-              <th class="py-3 px-3 w-12 text-center">No</th>
-              <th class="py-3 px-3">Nama User / Akun</th>
-              <th class="py-3 px-3">Alamat Email</th>
-              <th class="py-3 px-3">Cabang</th>
-              <th class="py-3 px-3 whitespace-nowrap">Role Hak Akses</th>
-              <th class="py-3 px-3">PIC</th>
-              <th class="py-3 px-3 text-center whitespace-nowrap w-32">Aksi</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-slate-100">
-            <tr v-for="(u, index) in users" :key="u.id" class="hover:bg-slate-50/50 transition">
-              <td class="py-3 px-3 text-center font-mono text-slate-400">{{ index + 1 }}</td>
-              <td class="py-3 px-3 font-bold text-slate-900">{{ u.name }}</td>
-              <td class="py-3 px-3 font-mono text-slate-600">{{ u.email }}</td>
-              <td class="py-3 px-3 font-semibold text-slate-700">{{ u.cabang || '-' }}</td>
-              <td class="py-3 px-3 whitespace-nowrap">
-                <span :class="getRoleBadge(u.role)" class="px-2.5 py-1 rounded-lg text-[10px] font-bold tracking-wide uppercase">
-                  {{ formatRole(u.role) }}
-                </span>
-              </td>
-              <td class="py-3 px-3 text-slate-600">{{ u.pic || '-' }}</td>
-              <td class="py-3 px-3 text-center whitespace-nowrap">
-                <div class="inline-flex items-center gap-1.5">
-                  <button
-                    @click="openModalEdit(u)"
-                    class="px-2.5 py-1 rounded-lg bg-blue-50 hover:bg-blue-100 text-blue-700 font-bold text-[11px] transition"
-                  >
-                    Edit
-                  </button>
-                  <button
-                    v-if="u.email !== 'gudangpusat@wms.com' && u.email !== 'superadmin@wms.com'"
-                    @click="deleteUser(u)"
-                    class="px-2.5 py-1 rounded-lg bg-rose-50 hover:bg-rose-100 text-rose-700 font-bold text-[11px] transition"
-                  >
-                    Hapus
-                  </button>
-                </div>
-              </td>
-            </tr>
-            <tr v-if="users.length === 0">
-              <td colspan="7" class="py-8 text-center text-slate-400 text-xs font-medium">Tidak ada data pengguna yang ditemukan.</td>
-            </tr>
-          </tbody>
-        </table>
+      <div v-show="!loading" class="w-full">
+        <DataTable
+          :data="users"
+          :columns="columns"
+          :options="dtOptions"
+          class="display stripe hover w-full text-xs"
+        >
+          <!-- Slot No -->
+          <template #col-no="{ rowIndex }">
+            <span class="font-mono text-slate-400 font-medium">{{ rowIndex + 1 }}</span>
+          </template>
+
+          <!-- Slot Nama -->
+          <template #col-name="{ rowData }">
+            <span class="font-bold text-slate-900">{{ rowData.name }}</span>
+          </template>
+
+          <!-- Slot Email -->
+          <template #col-email="{ rowData }">
+            <span class="font-mono text-slate-600">{{ rowData.email }}</span>
+          </template>
+
+          <!-- Slot Cabang -->
+          <template #col-cabang="{ rowData }">
+            <span class="font-semibold text-slate-700">{{ rowData.cabang || '-' }}</span>
+          </template>
+
+          <!-- Slot Role -->
+          <template #col-role="{ rowData }">
+            <span :class="getRoleBadge(rowData.role)" class="px-2.5 py-1 rounded-lg text-[10px] font-bold tracking-wide uppercase whitespace-nowrap">
+              {{ formatRole(rowData.role) }}
+            </span>
+          </template>
+
+          <!-- Slot PIC -->
+          <template #col-pic="{ rowData }">
+            <span class="text-slate-600">{{ rowData.pic || '-' }}</span>
+          </template>
+
+          <!-- Slot Aksi -->
+          <template #col-aksi="{ rowData }">
+            <div class="inline-flex items-center gap-1.5 whitespace-nowrap">
+              <button
+                @click="openModalEdit(rowData)"
+                class="px-2.5 py-1 rounded-lg bg-blue-50 hover:bg-blue-100 text-blue-700 font-bold text-[11px] transition cursor-pointer"
+              >
+                Edit
+              </button>
+              <button
+                v-if="rowData.email !== 'gudangpusat@wms.com' && rowData.email !== 'superadmin@wms.com'"
+                @click="deleteUser(rowData)"
+                class="px-2.5 py-1 rounded-lg bg-rose-50 hover:bg-rose-100 text-rose-700 font-bold text-[11px] transition cursor-pointer"
+              >
+                Hapus
+              </button>
+            </div>
+          </template>
+        </DataTable>
       </div>
     </div>
 
@@ -145,12 +149,31 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import api from '../services/api';
+import { DataTable, defaultDtOptions } from '../services/datatables';
 
 const users = ref([]);
-const search = ref('');
+const loading = ref(false);
 const showModal = ref(false);
 const isEditing = ref(false);
 const currentId = ref(null);
+
+const dtOptions = {
+  ...defaultDtOptions,
+  searching: true,
+  paging: true,
+  info: true,
+  order: [[0, 'asc']],
+};
+
+const columns = [
+  { data: null, title: 'No', render: '#col-no', className: 'text-center' },
+  { data: 'name', title: 'Nama User / Akun', render: '#col-name' },
+  { data: 'email', title: 'Alamat Email', render: '#col-email', className: 'font-mono' },
+  { data: 'cabang', title: 'Cabang', render: '#col-cabang' },
+  { data: 'role', title: 'Role Hak Akses', render: '#col-role' },
+  { data: 'pic', title: 'PIC', render: '#col-pic' },
+  { data: null, title: 'Aksi', render: '#col-aksi', orderable: false, searchable: false, className: 'text-center' },
+];
 
 const form = ref({
   name: '',
@@ -163,11 +186,14 @@ const form = ref({
 });
 
 const fetchUsers = async () => {
+  loading.value = true;
   try {
-    const res = await api.get('/users', { params: { search: search.value } });
+    const res = await api.get('/users');
     users.value = res.data.data;
   } catch (err) {
     console.error(err);
+  } finally {
+    loading.value = false;
   }
 };
 
