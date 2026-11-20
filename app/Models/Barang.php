@@ -183,34 +183,40 @@ class Barang extends Model
 
     /**
      * Ketentuan Status Expired:
-     * - Safe: lebih dari 2/3 tahun (>= 24 bulan)
-     * - Warning: menuju 1 tahun lagi mendekati expired (12 bulan s/d < 24 bulan)
-     * - Danger: menuju beberapa bulan lagi (< 12 bulan dan belum melewati tanggal expired)
-     * - Expired: sudah melebihi tanggal expired
+     * - Safe: >= 2 Tahun (>= 24 bulan)
+     * - Warning: Menuju 1 Tahun (12 bulan s/d < 24 bulan)
+     * - Danger: Beberapa Bulan Lagi (< 12 bulan dan belum melewati tanggal expired)
+     * - Expired: Melebihi Tgl Expired (sudah melewati tanggal expired)
      */
     public function getStatusExpiredInfoAttribute(): array
     {
         if (! $this->tanggal_expired || ! $this->tanggal_masuk) {
             return [
                 'label' => '-',
+                'description' => '-',
                 'bg' => '#f3f4f6',
                 'text' => '#374151',
                 'border' => '#d1d5db',
+                'dot' => '#9ca3af',
+                'class' => 'bg-slate-100 text-slate-700 border border-slate-300',
             ];
         }
 
         $acuan = Carbon::parse($this->tanggal_masuk)->startOfDay();
         $today = Carbon::now()->startOfDay();
-        // Gunakan tanggal acuan (jika hari ini sudah melewati tanggal masuk, bisa juga cek expired terhadap tanggal masuk/hari ini)
+        // Gunakan acuan tanggal saat ini terhadap tanggal expired
         $baseDate = $today->greaterThan($acuan) ? $today : $acuan;
         $expired = Carbon::parse($this->tanggal_expired)->startOfDay();
 
         if ($expired->lessThanOrEqualTo($baseDate)) {
             return [
                 'label' => 'Expired',
-                'bg' => '#7f1d1d',     // Dark Red / Maroon
+                'description' => 'Expired (Melebihi Tgl Expired)',
+                'bg' => '#7f1d1d',
                 'text' => '#ffffff',
                 'border' => '#991b1b',
+                'dot' => '#fca5a5',
+                'class' => 'bg-[#7f1d1d] text-white border border-[#991b1b]',
             ];
         }
 
@@ -219,26 +225,35 @@ class Barang extends Model
         if ($totalMonths >= 24) {
             return [
                 'label' => 'Safe',
-                'bg' => '#dcfce7',     // Hijau (Safe)
-                'text' => '#15803d',
-                'border' => '#86efac',
+                'description' => 'Safe (≥ 2 Tahun)',
+                'bg' => '#ecfdf5',
+                'text' => '#059669',
+                'border' => '#a7f3d0',
+                'dot' => '#10b981',
+                'class' => 'bg-[#ecfdf5] text-[#059669] border border-[#a7f3d0]',
             ];
         }
 
         if ($totalMonths >= 12) {
             return [
                 'label' => 'Warning',
-                'bg' => '#fef3c7',     // Kuning/Oranye (Warning)
-                'text' => '#b45309',
-                'border' => '#fcd34d',
+                'description' => 'Warning (Menuju 1 Tahun)',
+                'bg' => '#fffbeb',
+                'text' => '#d97706',
+                'border' => '#fde68a',
+                'dot' => '#f59e0b',
+                'class' => 'bg-[#fffbeb] text-[#d97706] border border-[#fde68a]',
             ];
         }
 
         return [
             'label' => 'Danger',
-            'bg' => '#fee2e2',         // Merah Muda/Terang (Danger - beberapa bulan lagi)
-            'text' => '#dc2626',
-            'border' => '#fca5a5',
+            'description' => 'Danger (Beberapa Bulan Lagi)',
+            'bg' => '#fef2f2',
+            'text' => '#e11d48',
+            'border' => '#fecdd3',
+            'dot' => '#f43f5e',
+            'class' => 'bg-[#fef2f2] text-[#e11d48] border border-[#fecdd3]',
         ];
     }
 }
