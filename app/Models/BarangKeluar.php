@@ -19,6 +19,8 @@ class BarangKeluar extends Model
         'tujuan',
         'nama_penerima',
         'total_jumlah',
+        'cabang_asal',
+        'user_id',
     ];
 
     protected function casts(): array

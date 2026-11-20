@@ -6,44 +6,69 @@ use App\Models\PermintaanBarang;
 use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+*/
 
+// PDF Print Routes (Dapat diakses langsung oleh Vue SPA dengan window.open)
+Route::get('/print/barang-keluar/{record}', function (int|string $record) {
+    $data = BarangKeluar::with('items')->findOrFail($record);
+
+    $safeFilename = 'Surat-Jalan-' . str_replace(['/', '\\', ' '], '-', $data->no_surat) . '.pdf';
+
+    $pdf = Pdf::loadView('pdf.surat-jalan-barang-keluar', [
+        'data' => $data,
+    ])->setPaper('a4', 'portrait');
+
+    return $pdf->stream($safeFilename);
+})->name('print.barang-keluar');
+
+Route::get('/print/permintaan-barang/{record}', function (int|string $record) {
+    $data = PermintaanBarang::with('items')->findOrFail($record);
+
+    $safeFilename = 'Surat-Permintaan-' . str_replace(['/', '\\', ' '], '-', $data->no_surat) . '.pdf';
+
+    $pdf = Pdf::loadView('pdf.surat-permintaan-barang', [
+        'data' => $data,
+    ])->setPaper('a4', 'portrait');
+
+    return $pdf->stream($safeFilename);
+})->name('print.permintaan-barang');
+
+Route::get('/print/invoice/{record}', function (int|string $record) {
+    $invoice = Invoice::with('items')->findOrFail($record);
+
+    $safeFilename = 'Sales-Invoice-' . str_replace(['/', '\\', ' '], '-', $invoice->no_invoice) . '.pdf';
+
+    $pdf = Pdf::loadView('pdf.sales-invoice', [
+        'invoice' => $invoice,
+    ])->setPaper('a4', 'portrait');
+
+    return $pdf->stream($safeFilename);
+})->name('print.invoice');
+
+// Rute PDF & Excel bawaan Filament Admin (tetap berjalan normal)
 Route::middleware(['web', 'auth'])->group(function () {
     Route::get('/admin/barang-keluar/{record}/pdf', function (int|string $record) {
         $data = BarangKeluar::with('items')->findOrFail($record);
-
         $safeFilename = 'Surat-Jalan-' . str_replace(['/', '\\', ' '], '-', $data->no_surat) . '.pdf';
-
-        $pdf = Pdf::loadView('pdf.surat-jalan-barang-keluar', [
-            'data' => $data,
-        ])->setPaper('a4', 'portrait');
-
+        $pdf = Pdf::loadView('pdf.surat-jalan-barang-keluar', ['data' => $data])->setPaper('a4', 'portrait');
         return $pdf->stream($safeFilename);
     })->name('barang-keluar.pdf');
 
     Route::get('/admin/kelola-invoice/{record}/pdf', function (int|string $record) {
         $invoice = Invoice::with('items')->findOrFail($record);
-
         $safeFilename = 'Sales-Invoice-' . str_replace(['/', '\\', ' '], '-', $invoice->no_invoice) . '.pdf';
-
-        $pdf = Pdf::loadView('pdf.sales-invoice', [
-            'invoice' => $invoice,
-        ])->setPaper('a4', 'portrait');
-
+        $pdf = Pdf::loadView('pdf.sales-invoice', ['invoice' => $invoice])->setPaper('a4', 'portrait');
         return $pdf->stream($safeFilename);
     })->name('kelola-invoice.pdf');
 
     Route::get('/admin/kelola-invoice/{record}/excel', function (int|string $record) {
         $invoice = Invoice::with('items')->findOrFail($record);
-
         $safeFilename = 'Sales-Invoice-' . str_replace(['/', '\\', ' '], '-', $invoice->no_invoice) . '.xls';
-
-        $content = view('excel.sales-invoice-excel', [
-            'invoice' => $invoice,
-        ])->render();
-
+        $content = view('excel.sales-invoice-excel', ['invoice' => $invoice])->render();
         return response($content, 200, [
             'Content-Type' => 'application/vnd.ms-excel; charset=UTF-8',
             'Content-Disposition' => 'attachment; filename="' . $safeFilename . '"',
@@ -53,13 +78,19 @@ Route::middleware(['web', 'auth'])->group(function () {
 
     Route::get('/admin/kelola-permintaan/{record}/pdf', function (int|string $record) {
         $data = PermintaanBarang::with('items')->findOrFail($record);
-
         $safeFilename = 'Surat-Permintaan-' . str_replace(['/', '\\', ' '], '-', $data->no_surat) . '.pdf';
-
-        $pdf = Pdf::loadView('pdf.surat-permintaan-barang', [
-            'data' => $data,
-        ])->setPaper('a4', 'portrait');
-
+        $pdf = Pdf::loadView('pdf.surat-permintaan-barang', ['data' => $data])->setPaper('a4', 'portrait');
         return $pdf->stream($safeFilename);
     })->name('permintaan-barang.pdf');
 });
+
+// SPA Login route (juga sebagai named route 'login' untuk fallback auth guard)
+Route::get('/login', function () {
+    return view('app');
+})->name('login');
+
+// Single Page Application (Vue 3) Fallback:
+// Menangani semua rute front-end (misal /, /users, /barang-masuk, dll) kecuali /admin dan /api
+Route::get('/{any}', function () {
+    return view('app');
+})->where('any', '^(?!admin|api|print).*$');

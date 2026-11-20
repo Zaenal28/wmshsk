@@ -19,6 +19,7 @@ class PermintaanBarang extends Model
         'jumlah_barang',
         'status',
         'catatan',
+        'user_id',
     ];
 
     protected $casts = [
@@ -48,29 +49,17 @@ class PermintaanBarang extends Model
     }
 
     /**
-     * Daftar preset cabang yang sering digunakan (bisa ditambah langsung di form)
+     * Daftar preset cabang pilihan:
+     * Ruang Facial, Apotek Cianjur, Marketplace, Gudang Bandung, Gudang PWK
      */
     public static function getCabangList(): array
     {
-        $defaultCabang = [
-            'HSK KLINIK PURWAKARTA',
-            'HSK KLINIK BANDUNG',
-            'HSK KLINIK JAKARTA',
-            'HSK KLINIK KARAWANG',
-            'HSK KLINIK SUBANG',
-            'HSK KLINIK BEKASI',
+        return [
+            'Ruang Facial',
+            'Apotek Cianjur',
+            'Marketplace',
+            'Gudang Bandung',
+            'Gudang PWK',
         ];
-
-        $fromDb = static::query()
-            ->whereNotNull('cabang')
-            ->where('cabang', '!=', '')
-            ->distinct()
-            ->pluck('cabang')
-            ->toArray();
-
-        // Juga bisa mengambil dari tujuan barang keluar jika ada
-        $fromBarangKeluar = BarangKeluar::getTujuanList();
-
-        return array_values(array_unique(array_filter(array_merge($defaultCabang, $fromDb, $fromBarangKeluar))));
     }
 }

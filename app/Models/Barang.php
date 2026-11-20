@@ -25,6 +25,13 @@ class Barang extends Model
         'alokasi_penyimpanan',
         'satuan',
         'harga_barang',
+        'cabang',
+        'user_id',
+    ];
+
+    protected $appends = [
+        'masa_berlaku',
+        'status_expired_info',
     ];
 
     protected function casts(): array

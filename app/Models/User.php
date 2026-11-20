@@ -2,14 +2,14 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Filament\Models\Contracts\FilamentUser;
 use Filament\Panel;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Tymon\JWTAuth\Contracts\JWTSubject;
 
-class User extends Authenticatable implements FilamentUser
+class User extends Authenticatable implements FilamentUser, JWTSubject
 {
     use HasFactory, Notifiable;
 
@@ -22,6 +22,10 @@ class User extends Authenticatable implements FilamentUser
         'name',
         'email',
         'password',
+        'role',
+        'cabang',
+        'pic',
+        'is_active',
     ];
 
     /**
@@ -44,11 +48,34 @@ class User extends Authenticatable implements FilamentUser
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+            'is_active' => 'boolean',
         ];
     }
 
     public function canAccessPanel(Panel $panel): bool
     {
         return true;
+    }
+
+    /**
+     * JWT Subject Identifier
+     */
+    public function getJWTIdentifier()
+    {
+        return $this->getKey();
+    }
+
+    /**
+     * Custom JWT Claims
+     */
+    public function getJWTCustomClaims(): array
+    {
+        return [
+            'name' => $this->name,
+            'email' => $this->email,
+            'role' => $this->role,
+            'cabang' => $this->cabang,
+            'pic' => $this->pic,
+        ];
     }
 }
