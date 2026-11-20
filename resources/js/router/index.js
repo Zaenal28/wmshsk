@@ -71,6 +71,10 @@ router.beforeEach(async (to, from, next) => {
 
   // Halaman khusus tamu (contoh: /login)
   if (to.meta.guestOnly && isAuthenticated) {
+    if (authStore.user?.role === 'gudang_pusat' || authStore.user?.email === 'gudangpusat@wms.com') {
+      window.location.replace('/admin');
+      return;
+    }
     if (authStore.isSuperAdmin) {
       return next({ name: 'users' });
     }

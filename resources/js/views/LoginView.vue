@@ -104,9 +104,10 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 import { useAuthStore } from '../stores/auth';
+import api from '../services/api';
 
 const router = useRouter();
 const authStore = useAuthStore();
@@ -121,6 +122,22 @@ const quickFill = (e, p) => {
   password.value = p;
 };
 
+onMounted(async () => {
+  // Jika user yang tersimpan adalah Gudang Pusat dan masih terautentikasi, langsung bawa ke /admin
+  if (authStore.user?.role === 'gudang_pusat' || authStore.user?.email === 'gudangpusat@wms.com') {
+    try {
+      const res = await api.get('/me');
+      if (res.data?.user?.role === 'gudang_pusat' || res.data?.user?.email === 'gudangpusat@wms.com') {
+        window.location.replace('/admin');
+        return;
+      }
+    } catch {
+      // Jika session sudah logout/kedaluwarsa, bersihkan sisa kredensial di browser
+      authStore.logout();
+    }
+  }
+});
+
 const handleLogin = async () => {
   loading.value = true;
   errorMessage.value = '';
@@ -129,20 +146,21 @@ const handleLogin = async () => {
   loading.value = false;
 
   if (res.success) {
-    // 1. Jika user adalah Gudang Pusat, arahkan langsung ke portal Filament (/admin)
+    // 1. Jika user adalah Gudang Pusat, ganti riwayat browser (replace) langsung ke portal Filament (/admin)
+    // Menggunakan location.replace agar halaman /login tidak tersimpan di tombol 'Back' browser
     if (authStore.user?.role === 'gudang_pusat' || authStore.user?.email === 'gudangpusat@wms.com') {
-      window.location.href = '/admin';
+      window.location.replace('/admin');
       return;
     }
 
     // 2. Jika Super Admin, arahkan ke Kelola Akun User (/users)
     if (authStore.isSuperAdmin) {
-      router.push('/users');
+      router.replace('/users');
       return;
     }
 
     // 3. Jika Cabang, arahkan ke Kelola Barang Masuk (/barang-masuk)
-    router.push('/barang-masuk');
+    router.replace('/barang-masuk');
   } else {
     errorMessage.value = res.message;
   }
