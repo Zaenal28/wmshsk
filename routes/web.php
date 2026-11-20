@@ -84,6 +84,14 @@ Route::middleware(['web', 'auth'])->group(function () {
     })->name('permintaan-barang.pdf');
 });
 
+// Redirect /admin/login ke satu halaman login terpadu di /login
+Route::get('/admin/login', function () {
+    if (auth()->guard('web')->check()) {
+        return redirect('/admin');
+    }
+    return redirect('/login');
+})->name('filament.admin.auth.login');
+
 // SPA Login route (juga sebagai named route 'login' untuk fallback auth guard)
 Route::get('/login', function () {
     return view('app');

@@ -37,6 +37,13 @@ class AuthController extends Controller
             ], 403);
         }
 
+        // Login ke session web agar Filament Admin (/admin) langsung terautentikasi otomatis
+        Auth::guard('web')->login($user, true);
+        if ($request->hasSession()) {
+            $request->session()->regenerate();
+            $request->session()->save();
+        }
+
         return $this->respondWithToken($token, $user);
     }
 

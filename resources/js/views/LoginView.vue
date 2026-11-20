@@ -16,7 +16,7 @@
         <span>{{ errorMessage }}</span>
       </div>
 
-      <!-- Form Login -->
+      <!-- Form Login Terpadu (Untuk Semua Pengguna: Pusat, Super Admin, dan Cabang) -->
       <form @submit.prevent="handleLogin" class="space-y-4">
         <div>
           <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Alamat Email</label>
@@ -24,7 +24,7 @@
             v-model="email"
             type="email"
             required
-            placeholder="contoh: superadmin@wms.com atau ruangdoktercianjur@wms.com"
+            placeholder="Masukkan email akun Anda..."
             class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-blue-600 focus:ring-4 focus:ring-blue-100 text-sm text-slate-900 outline-none transition"
           />
         </div>
@@ -53,34 +53,48 @@
         </button>
       </form>
 
-      <!-- Portal Gudang Pusat (Filament) Link Card -->
-      <div class="mt-5 p-3.5 rounded-xl bg-amber-50/70 border border-amber-200/80 flex items-center justify-between">
-        <div>
-          <p class="text-xs font-bold text-amber-900">Portal Gudang Pusat</p>
-          <p class="text-[11px] text-amber-700">Khusus alur Gudang Pusat & Admin Filament</p>
-        </div>
-        <a
-          href="/admin"
-          class="px-3 py-1.5 bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold rounded-lg shadow-sm transition"
-        >
-          Buka /admin &rarr;
-        </a>
-      </div>
-
       <!-- Info Preset Akun Cepat untuk Pengujian -->
-      <div class="mt-5 pt-4 border-t border-slate-100">
-        <p class="text-[10px] font-bold text-slate-400 text-center uppercase tracking-wider mb-2">Pilih Cepat Akun Login</p>
-        <div class="grid grid-cols-2 gap-1.5 text-[10px]">
-          <button @click="quickFill('superadmin@wms.com', 'hsksecret0208')" type="button" class="p-2 rounded-lg bg-blue-50/70 hover:bg-blue-100 text-blue-900 font-bold text-left truncate border border-blue-200">
-            👑 Super Admin (Kelola Akun)
+      <div class="mt-6 pt-5 border-t border-slate-100">
+        <p class="text-[10px] font-bold text-slate-400 text-center uppercase tracking-wider mb-2.5">Pilih Cepat Akun Login</p>
+        <div class="grid grid-cols-2 gap-2 text-[10px]">
+          <!-- Gudang Pusat -->
+          <button
+            @click="quickFill('gudangpusat@wms.com', 'password123')"
+            type="button"
+            class="p-2 rounded-xl bg-amber-50/80 hover:bg-amber-100 text-amber-900 font-bold text-left truncate border border-amber-200 transition"
+          >
+            🏛️ Gudang Pusat
           </button>
-          <button @click="quickFill('ruangdoktercianjur@wms.com', 'hsksecret0208')" type="button" class="p-2 rounded-lg bg-slate-50 hover:bg-slate-100 text-slate-700 font-medium text-left truncate">
+          <!-- Super Admin -->
+          <button
+            @click="quickFill('superadmin@wms.com', 'hsksecret0208')"
+            type="button"
+            class="p-2 rounded-xl bg-blue-50/80 hover:bg-blue-100 text-blue-900 font-bold text-left truncate border border-blue-200 transition"
+          >
+            👑 Super Admin
+          </button>
+          <!-- Dokter Cianjur -->
+          <button
+            @click="quickFill('ruangdoktercianjur@wms.com', 'hsksecret0208')"
+            type="button"
+            class="p-2 rounded-xl bg-slate-50 hover:bg-slate-100 text-slate-700 font-medium text-left truncate border border-slate-100 transition"
+          >
             🩺 Dokter Cianjur
           </button>
-          <button @click="quickFill('gudangbandung@wms.com', 'hsksecret0208')" type="button" class="p-2 rounded-lg bg-slate-50 hover:bg-slate-100 text-slate-700 font-medium text-left truncate">
+          <!-- Gudang Bandung -->
+          <button
+            @click="quickFill('gudangbandung@wms.com', 'hsksecret0208')"
+            type="button"
+            class="p-2 rounded-xl bg-slate-50 hover:bg-slate-100 text-slate-700 font-medium text-left truncate border border-slate-100 transition"
+          >
             📦 Gudang Bandung
           </button>
-          <button @click="quickFill('apotekcianjur@wms.com', 'hsksecret0208')" type="button" class="p-2 rounded-lg bg-slate-50 hover:bg-slate-100 text-slate-700 font-medium text-left truncate">
+          <!-- Apotek Cianjur -->
+          <button
+            @click="quickFill('apotekcianjur@wms.com', 'hsksecret0208')"
+            type="button"
+            class="p-2 rounded-xl bg-slate-50 hover:bg-slate-100 text-slate-700 font-medium text-left truncate border border-slate-100 transition col-span-2 text-center"
+          >
             💊 Apotek Cianjur
           </button>
         </div>
@@ -115,17 +129,20 @@ const handleLogin = async () => {
   loading.value = false;
 
   if (res.success) {
-    // Jika user adalah gudang_pusat, arahkan ke Filament Admin /admin
+    // 1. Jika user adalah Gudang Pusat, arahkan langsung ke portal Filament (/admin)
     if (authStore.user?.role === 'gudang_pusat' || authStore.user?.email === 'gudangpusat@wms.com') {
       window.location.href = '/admin';
       return;
     }
 
+    // 2. Jika Super Admin, arahkan ke Kelola Akun User (/users)
     if (authStore.isSuperAdmin) {
       router.push('/users');
-    } else {
-      router.push('/barang-masuk');
+      return;
     }
+
+    // 3. Jika Cabang, arahkan ke Kelola Barang Masuk (/barang-masuk)
+    router.push('/barang-masuk');
   } else {
     errorMessage.value = res.message;
   }
