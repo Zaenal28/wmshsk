@@ -274,9 +274,15 @@ class StokGudangPusat extends Page
                 ->where('nama_barang', $namaBarang)
                 ->first();
 
-            $statusPesan = $existing?->status_pesan ?? ($prevStok?->status_pesan === 'Discontinue' ? 'Discontinue' : 'Tidak');
-            if ($statusPesan !== 'Discontinue') {
-                $statusPesan = ($rata3 > 0 && $stokAkhir < $rata3) ? 'Pesan' : 'Tidak';
+            $isManualPesan = (bool) ($existing?->is_manual_pesan ?? false);
+            if ($isManualPesan && $existing?->status_pesan) {
+                $statusPesan = $existing->status_pesan;
+            } elseif ($existing?->status_pesan === 'Discontinue' || $prevStok?->status_pesan === 'Discontinue') {
+                $statusPesan = 'Discontinue';
+                $isManualPesan = true;
+            } else {
+                // Rumus Spreadsheet: =IF(stok_akhir < rata_1_bulan; "Pesan"; "Tidak")
+                $statusPesan = ((int) $stokAkhir < (int) $rata1) ? 'Pesan' : 'Tidak';
             }
 
             $kategori = $existing?->kategori ?? ($prevStok?->kategori ?? ($barang?->kategori ?: 'Lain-lain'));
@@ -311,6 +317,7 @@ class StokGudangPusat extends Page
                     'retur_pabrik' => $returPabrik,
                     'stok_akhir' => $stokAkhir,
                     'status_pesan' => $statusPesan,
+                    'is_manual_pesan' => $isManualPesan,
                     'stok_pabrik' => $stokPabrik,
                     'expired_1' => $expired1,
                     'expired_2' => $expired2,
@@ -486,7 +493,14 @@ class StokGudangPusat extends Page
         $this->editKategori = $record->kategori;
         $this->editTanggalPesan = $record->tanggal_pesan ? $record->tanggal_pesan->format('Y-m-d') : null;
         $this->editStokPabrik = $record->stok_pabrik;
-        $this->editStatusPesan = $record->status_pesan;
+
+        // Jika tidak diset manual dan bukan Discontinue, gunakan opsi Otomatis
+        if (!$record->is_manual_pesan && $record->status_pesan !== 'Discontinue') {
+            $this->editStatusPesan = 'Otomatis';
+        } else {
+            $this->editStatusPesan = $record->status_pesan;
+        }
+
         $this->editExpired1 = $record->expired_1;
         $this->editExpired2 = $record->expired_2;
         $this->editCatatan = $record->catatan;
@@ -506,11 +520,32 @@ class StokGudangPusat extends Page
 
         $record = PerencanaanStok::find($this->editingId);
         if ($record) {
+            $isManual = false;
+            $statusPesan = 'Tidak';
+
+            if ($this->editStatusPesan === 'Otomatis') {
+                $isManual = false;
+                $statusPesan = ((int) $record->stok_akhir < (int) $record->rata_1_bulan) ? 'Pesan' : 'Tidak';
+            } elseif ($this->editStatusPesan === 'Discontinue') {
+                $isManual = true;
+                $statusPesan = 'Discontinue';
+            } elseif ($this->editStatusPesan === 'Pesan') {
+                $isManual = true;
+                $statusPesan = 'Pesan';
+            } elseif ($this->editStatusPesan === 'Tidak') {
+                $isManual = true;
+                $statusPesan = 'Tidak';
+            } else {
+                $isManual = false;
+                $statusPesan = ((int) $record->stok_akhir < (int) $record->rata_1_bulan) ? 'Pesan' : 'Tidak';
+            }
+
             $record->update([
                 'kategori' => $this->editKategori ?: 'Lain-lain',
                 'tanggal_pesan' => $this->editTanggalPesan ?: null,
                 'stok_pabrik' => $this->editStokPabrik !== null ? (int) $this->editStokPabrik : null,
-                'status_pesan' => $this->editStatusPesan,
+                'status_pesan' => $statusPesan,
+                'is_manual_pesan' => $isManual,
                 'expired_1' => $this->editExpired1,
                 'expired_2' => $this->editExpired2,
                 'catatan' => $this->editCatatan,
@@ -525,6 +560,7 @@ class StokGudangPusat extends Page
 
             Notification::make()
                 ->title("Data {$record->nama_barang} berhasil diperbarui!")
+                ->body("Status pesan: {$statusPesan}" . ($isManual ? ' (Manual)' : ' (Otomatis Rumus)'))
                 ->success()
                 ->send();
         }
@@ -536,9 +572,17 @@ class StokGudangPusat extends Page
     {
         $record = PerencanaanStok::find($id);
         if ($record) {
-            $record->update(['status_pesan' => $status]);
+            $isManual = ($status !== 'Otomatis');
+            $finalStatus = $status;
+            if ($status === 'Otomatis') {
+                $finalStatus = ((int) $record->stok_akhir < (int) $record->rata_1_bulan) ? 'Pesan' : 'Tidak';
+            }
+            $record->update([
+                'status_pesan' => $finalStatus,
+                'is_manual_pesan' => $isManual,
+            ]);
             Notification::make()
-                ->title("Status {$record->nama_barang} diubah ke {$status}")
+                ->title("Status {$record->nama_barang} diubah ke {$finalStatus}" . ($isManual ? ' (Manual)' : ' (Otomatis)'))
                 ->success()
                 ->send();
         }

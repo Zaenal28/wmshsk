@@ -106,7 +106,7 @@
         @php
             $allRows = $this->perencanaan_stoks_grouped->flatten(1);
             $totalProduk = $allRows->count();
-            $totalPesan = $allRows->filter(fn ($r) => strtolower($r->status_pesan) === 'pesan')->count();
+            $totalPesan = $allRows->filter(fn ($r) => strtolower($r->status_pesan_otomatis) === 'pesan')->count();
             $totalMasuk = $allRows->sum(fn ($r) => (int)$r->masuk_pabrik + (int)$r->masuk_cabang);
             $totalKeluar = $allRows->sum(fn ($r) => (int)$r->total_keluar);
         @endphp
@@ -215,7 +215,7 @@
 
                             @foreach ($items as $item)
                                 @php
-                                    $pesanLower = strtolower($item->status_pesan);
+                                    $pesanLower = strtolower($item->status_pesan_otomatis);
                                     $badge = $item->badge_status_pesan;
                                     $isDefisit3 = $item->selisih_3_bulan < 0;
                                     $isDefisit2 = $item->selisih_2_bulan < 0;
@@ -295,19 +295,27 @@
 
                                     <!-- Status Pesan (Badge Highlight) -->
                                     <td class="p-2 border-r border-slate-200 dark:border-slate-800 font-bold">
-                                        @if ($pesanLower === 'pesan')
-                                            <span class="inline-block px-2.5 py-1 rounded-md text-xs font-black bg-yellow-300 text-yellow-900 shadow-xs border border-yellow-400 animate-pulse">
-                                                Pesan
-                                            </span>
-                                        @elseif ($pesanLower === 'discontinue')
-                                            <span class="inline-block px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-slate-200 text-slate-600 border border-slate-300">
-                                                discontinue
-                                            </span>
-                                        @else
-                                            <span class="inline-block px-2.5 py-0.5 rounded-md text-[11px] font-medium text-slate-600 dark:text-slate-300">
-                                                Tidak
-                                            </span>
-                                        @endif
+                                        <button type="button"
+                                                wire:click="bukaModalEdit({{ $item->id }})"
+                                                title="Klik untuk ubah status pesan (Otomatis / Manual)"
+                                                class="focus:outline-none transition hover:opacity-80 inline-flex flex-col items-center cursor-pointer">
+                                            @if ($pesanLower === 'pesan')
+                                                <span class="inline-block px-2.5 py-1 rounded-md text-xs font-black bg-yellow-300 text-yellow-900 shadow-xs border border-yellow-400 animate-pulse">
+                                                    Pesan
+                                                </span>
+                                            @elseif ($pesanLower === 'discontinue')
+                                                <span class="inline-block px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-slate-200 text-slate-600 border border-slate-300">
+                                                    discontinue
+                                                </span>
+                                            @else
+                                                <span class="inline-block px-2.5 py-0.5 rounded-md text-[11px] font-medium text-slate-600 dark:text-slate-300">
+                                                    Tidak
+                                                </span>
+                                            @endif
+                                            @if ($item->is_manual_pesan)
+                                                <span class="text-[9px] text-purple-600 dark:text-purple-400 font-semibold mt-0.5">(Manual)</span>
+                                            @endif
+                                        </button>
                                     </td>
 
                                     <!-- Tanggal Pesan -->
@@ -392,10 +400,12 @@
                             <div>
                                 <label class="block font-bold text-gray-700 dark:text-gray-300 mb-1">Status Pesan</label>
                                 <select wire:model="editStatusPesan" class="w-full text-xs rounded-xl border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white py-2 px-3 focus:ring-purple-500">
-                                    <option value="Tidak">Tidak (Stok Aman)</option>
-                                    <option value="Pesan">Pesan (Defisit Kebutuhan)</option>
-                                    <option value="Discontinue">Discontinue</option>
+                                    <option value="Otomatis">⚡ Otomatis (Rumus: Stok Akhir &lt; Rata 1 Bln)</option>
+                                    <option value="Pesan">⚠️ Pesan (Manual)</option>
+                                    <option value="Tidak">✅ Tidak (Manual)</option>
+                                    <option value="Discontinue">⛔ Discontinue</option>
                                 </select>
+                                <p class="text-[10px] text-gray-400 mt-1">Rumus otomatis: Jika Stok Akhir &lt; Rata-rata 1 Bulan maka "Pesan", jika tidak maka "Tidak".</p>
                             </div>
                             <div>
                                 <label class="block font-bold text-gray-700 dark:text-gray-300 mb-1">Tanggal Pesan</label>

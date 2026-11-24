@@ -37,6 +37,7 @@ class PerencanaanStok extends Model
         'retur_pabrik',
         'stok_akhir',
         'status_pesan',
+        'is_manual_pesan',
         'tanggal_pesan',
         'stok_pabrik',
         'expired_1',
@@ -66,6 +67,7 @@ class PerencanaanStok extends Model
             'retur_pabrik' => 'integer',
             'stok_akhir' => 'integer',
             'stok_pabrik' => 'integer',
+            'is_manual_pesan' => 'boolean',
         ];
     }
 
@@ -149,11 +151,33 @@ class PerencanaanStok extends Model
     }
 
     /**
+     * Hitung status pesan otomatis sesuai rumus spreadsheet:
+     * =IF(stok_akhir < rata_1_bulan; "Pesan"; "Tidak")
+     * Jika manual atau discontinue, gunakan pilihan pengguna.
+     */
+    public function getStatusPesanOtomatisAttribute(): string
+    {
+        $status = trim((string) $this->status_pesan);
+
+        if (strtolower($status) === 'discontinue') {
+            return 'Discontinue';
+        }
+
+        if ($this->is_manual_pesan) {
+            return in_array($status, ['Pesan', 'Tidak', 'Discontinue']) ? $status : 'Tidak';
+        }
+
+        // Rumus spreadsheet: =IF(stok_akhir < rata_1_bulan; "Pesan"; "Tidak")
+        // "Jika stok akhir lebih kecil daripada rata-rata barang keluar 1 bulan, maka tampilkan tulisan Pesan. Jika tidak (stok masih sama atau lebih banyak), tampilkan tulisan Tidak."
+        return ((int) $this->stok_akhir < (int) $this->rata_1_bulan) ? 'Pesan' : 'Tidak';
+    }
+
+    /**
      * Badge visual status pesan sesuai logika spreadsheet
      */
     public function getBadgeStatusPesanAttribute(): array
     {
-        $status = strtolower(trim((string) $this->status_pesan));
+        $status = strtolower(trim((string) $this->status_pesan_otomatis));
 
         if ($status === 'discontinue') {
             return [
@@ -164,7 +188,7 @@ class PerencanaanStok extends Model
             ];
         }
 
-        if ($status === 'pesan' || ($this->selisih_3_bulan < 0 && $status !== 'tidak')) {
+        if ($status === 'pesan') {
             return [
                 'label' => 'Pesan',
                 'bg' => '#fef08a',
