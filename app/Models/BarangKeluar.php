@@ -47,6 +47,7 @@ class BarangKeluar extends Model
             'Marketplace',
             'Gudang Purwakarta',
             'Gudang Bandung',
+            'Retur Pabrik',
         ];
 
         $fromDb = static::query()

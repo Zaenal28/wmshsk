@@ -1,0 +1,4754 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>STOK GUDANG PUSAT DESEMBER 2026</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-family: Calibri, Arial, sans-serif;
+            font-size: 11pt;
+        }
+        th, td {
+            border: 1px solid #000000;
+            padding: 5px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .header-title {
+            font-size: 16pt;
+            font-weight: bold;
+            text-align: center;
+            border: none;
+            padding: 15px;
+        }
+        .bg-pink { background-color: #FCE7F3; }
+        .bg-gray { background-color: #E2E8F0; }
+        .bg-ap { background-color: #DBEAFE; }
+        .bg-rf { background-color: #FCE7F3; }
+        .bg-mp { background-color: #FFE4E6; }
+        .bg-pwk { background-color: #FFEDD5; }
+        .bg-bdg { background-color: #DCFCE7; }
+        .bg-racik { background-color: #FEF9C3; }
+        .bg-kategori { background-color: #F1F5F9; font-weight: bold; font-size: 12pt; text-align: center; }
+        .bg-pesan { background-color: #FEF08A; font-weight: bold; color: #854D0E; }
+        .bg-discontinue { background-color: #E2E8F0; color: #475569; }
+        .text-left { text-align: left; }
+        .text-right { text-align: right; }
+        .font-bold { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="23" class="header-title">STOK GUDANG PUSAT DESEMBER 2026</td>
+        </tr>
+        <thead>
+            <tr>
+                <th rowspan="2" class="bg-pink">no.</th>
+                <th rowspan="2" class="bg-pink">Nama Produk</th>
+                <th rowspan="2" class="bg-gray">Rata-rata<br>3 bulan</th>
+                <th rowspan="2" class="bg-gray">Rata rata<br>2 bulan</th>
+                <th rowspan="2" class="bg-gray">Rata-rata<br>1 bulan</th>
+                <th rowspan="2" class="bg-gray">Stok<br>awal</th>
+                <th colspan="2" class="bg-gray">Barang Masuk</th>
+                <th colspan="6" class="bg-gray">PENGELUARAN</th>
+                <th rowspan="2" class="bg-gray">Total<br>keluar</th>
+                <th rowspan="2" class="bg-pink">retur<br>pabrik</th>
+                <th rowspan="2" class="bg-gray">Stok<br>akhir</th>
+                <th rowspan="2" class="bg-gray">Kekurangan (-)<br>Kelebihan (+)<br>3 bulan</th>
+                <th rowspan="2" class="bg-gray">Kekurangan (-)<br>Kelebihan (+)<br>2 bulan</th>
+                <th rowspan="2" class="bg-pink">Pesan</th>
+                <th rowspan="2" class="bg-pink">TANGGAL<br>PESAN</th>
+                <th rowspan="2" class="bg-pink">STOK<br>PABRIK</th>
+                <th rowspan="2" class="bg-pink">expired 1</th>
+                <th rowspan="2" class="bg-pink">expired 2</th>
+            </tr>
+            <tr>
+                <th class="bg-gray">Pabrik</th>
+                <th class="bg-gray">Cabang</th>
+                <th class="bg-ap">AP</th>
+                <th class="bg-rf">RF</th>
+                <th class="bg-mp">MP</th>
+                <th class="bg-pwk">PWK</th>
+                <th class="bg-bdg">BDG</th>
+                <th class="bg-racik">RACIK</th>
+            </tr>
+        </thead>
+        <tbody>
+                            <tr>
+                    <td colspan="23" class="bg-kategori">Pembersih</td>
+                </tr>
+                                                        <tr>
+                        <td>1</td>
+                        <td class="text-left font-bold">HSK Secret Cleasing Oil</td>
+                        <td>5</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td style="color: red;">-5</td>
+                        <td style="color: red;">-4</td>
+                        <td class="bg-discontinue">Discontinue</td>
+                        <td></td>
+                        <td></td>
+                        <td>12/2027</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>2</td>
+                        <td class="text-left font-bold">HSK Secret Eye Make Up Remover</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>21</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">21</td>
+                        <td style="">9</td>
+                        <td style="">9</td>
+                        <td class="bg-discontinue">Discontinue</td>
+                        <td></td>
+                        <td></td>
+                        <td>5/2027</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>3</td>
+                        <td class="text-left font-bold">HSK Secret Micellar Milk</td>
+                        <td>195</td>
+                        <td>133</td>
+                        <td>68</td>
+                        <td>104</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">104</td>
+                        <td style="color: red;">-91</td>
+                        <td style="color: red;">-29</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>8/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>4</td>
+                        <td class="text-left font-bold">HSK Secret Micellar Water</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td style="color: red;">-10</td>
+                        <td style="color: red;">-10</td>
+                        <td class="bg-discontinue">Discontinue</td>
+                        <td></td>
+                        <td></td>
+                        <td>12/2027</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>5</td>
+                        <td class="text-left font-bold">HSK Secret Milky Micellar</td>
+                        <td>118</td>
+                        <td>82</td>
+                        <td>34</td>
+                        <td>9</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">9</td>
+                        <td style="color: red;">-109</td>
+                        <td style="color: red;">-73</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>3/2028</td>
+                        <td></td>
+                    </tr>
+                                            <tr>
+                    <td colspan="23" class="bg-kategori">Sabun</td>
+                </tr>
+                                                        <tr>
+                        <td>6</td>
+                        <td class="text-left font-bold">HSK Secret Fw. Dry &amp; sensitive</td>
+                        <td>219</td>
+                        <td>113</td>
+                        <td>1</td>
+                        <td>86</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">86</td>
+                        <td style="color: red;">-133</td>
+                        <td style="color: red;">-27</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>5/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>7</td>
+                        <td class="text-left font-bold">HSK Secret Fw. Oily</td>
+                        <td>258</td>
+                        <td>133</td>
+                        <td>1</td>
+                        <td>149</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">149</td>
+                        <td style="color: red;">-109</td>
+                        <td style="">16</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>5/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>8</td>
+                        <td class="text-left font-bold">HSK Secret Fw. Foam</td>
+                        <td>34</td>
+                        <td>21</td>
+                        <td>1</td>
+                        <td>166</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">166</td>
+                        <td style="">132</td>
+                        <td style="">145</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>5/2028</td>
+                        <td></td>
+                    </tr>
+                                            <tr>
+                    <td colspan="23" class="bg-kategori">Sunblock</td>
+                </tr>
+                                                        <tr>
+                        <td>9</td>
+                        <td class="text-left font-bold">HSK Secret AA Sunscreen</td>
+                        <td>135</td>
+                        <td>71</td>
+                        <td>1</td>
+                        <td>205</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">205</td>
+                        <td style="">70</td>
+                        <td style="">134</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2/2027</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>10</td>
+                        <td class="text-left font-bold">HSK Secret Acne Sun Protector</td>
+                        <td>36</td>
+                        <td>14</td>
+                        <td>18</td>
+                        <td>0</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td style="color: red;">-36</td>
+                        <td style="color: red;">-14</td>
+                        <td class="bg-discontinue">Discontinue</td>
+                        <td></td>
+                        <td>148</td>
+                        <td>1/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>11</td>
+                        <td class="text-left font-bold">HSK Secret Flawless Skin</td>
+                        <td>101</td>
+                        <td>88</td>
+                        <td>47</td>
+                        <td>163</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">163</td>
+                        <td style="">62</td>
+                        <td style="">75</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>7/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>12</td>
+                        <td class="text-left font-bold">HSK Secret Glow Sunscreen</td>
+                        <td>42</td>
+                        <td>34</td>
+                        <td>20</td>
+                        <td>221</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">221</td>
+                        <td style="">179</td>
+                        <td style="">187</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>6/2029</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>13</td>
+                        <td class="text-left font-bold">Skin MTX</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">8</td>
+                        <td style="">6</td>
+                        <td style="">6</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>3/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>14</td>
+                        <td class="text-left font-bold">HSK Secret SS Sunscreen</td>
+                        <td>345</td>
+                        <td>191</td>
+                        <td>2</td>
+                        <td>153</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">153</td>
+                        <td style="color: red;">-192</td>
+                        <td style="color: red;">-38</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>8/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>15</td>
+                        <td class="text-left font-bold">HSK Secret Sunshield</td>
+                        <td>33</td>
+                        <td>4</td>
+                        <td>18</td>
+                        <td>0</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td style="color: red;">-33</td>
+                        <td style="color: red;">-4</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td>116</td>
+                        <td>1/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>16</td>
+                        <td class="text-left font-bold">HSK Secret WL Sunscreen</td>
+                        <td>221</td>
+                        <td>163</td>
+                        <td>87</td>
+                        <td>185</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">185</td>
+                        <td style="color: red;">-36</td>
+                        <td style="">22</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>5/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>17</td>
+                        <td class="text-left font-bold">HSK Secret WN Sunscreen</td>
+                        <td>366</td>
+                        <td>190</td>
+                        <td>2</td>
+                        <td>382</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">382</td>
+                        <td style="">16</td>
+                        <td style="">192</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>7/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>13</td>
+                        <td class="text-left font-bold">SB Skin MTX</td>
+                        <td>23</td>
+                        <td>13</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">8</td>
+                        <td style="color: red;">-15</td>
+                        <td style="color: red;">-5</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-03-01</td>
+                        <td></td>
+                    </tr>
+                                            <tr>
+                    <td colspan="23" class="bg-kategori">Pelembab</td>
+                </tr>
+                                                        <tr>
+                        <td>18</td>
+                        <td class="text-left font-bold">HSK Secret AC-2</td>
+                        <td>99</td>
+                        <td>67</td>
+                        <td>24</td>
+                        <td>57</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">57</td>
+                        <td style="color: red;">-42</td>
+                        <td style="color: red;">-10</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>4/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>19</td>
+                        <td class="text-left font-bold">HSK Secret Acne Skin Barier</td>
+                        <td>89</td>
+                        <td>64</td>
+                        <td>21</td>
+                        <td>126</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">126</td>
+                        <td style="">37</td>
+                        <td style="">62</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>3/2029</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>20</td>
+                        <td class="text-left font-bold">HSK Secret AH-1</td>
+                        <td>36</td>
+                        <td>23</td>
+                        <td>1</td>
+                        <td>253</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">253</td>
+                        <td style="">217</td>
+                        <td style="">230</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>11/2027</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>21</td>
+                        <td class="text-left font-bold">HSK Secret Essential Moist</td>
+                        <td>169</td>
+                        <td>118</td>
+                        <td>49</td>
+                        <td>151</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">151</td>
+                        <td style="color: red;">-18</td>
+                        <td style="">33</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>1/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>22</td>
+                        <td class="text-left font-bold">HSK Secret Glowing Gel</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>1</td>
+                        <td>19</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">19</td>
+                        <td style="">12</td>
+                        <td style="">12</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>12/2027</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>23</td>
+                        <td class="text-left font-bold">HSK Secret Intensive Moist</td>
+                        <td>197</td>
+                        <td>138</td>
+                        <td>66</td>
+                        <td>90</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">90</td>
+                        <td style="color: red;">-107</td>
+                        <td style="color: red;">-48</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td>31</td>
+                        <td>4/2029</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>24</td>
+                        <td class="text-left font-bold">HSK Secret WP Moist</td>
+                        <td>71</td>
+                        <td>46</td>
+                        <td>20</td>
+                        <td>194</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">194</td>
+                        <td style="">123</td>
+                        <td style="">148</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>7/2028</td>
+                        <td></td>
+                    </tr>
+                                            <tr>
+                    <td colspan="23" class="bg-kategori">Serum</td>
+                </tr>
+                                                        <tr>
+                        <td>25</td>
+                        <td class="text-left font-bold">HSK Secret AA Skin Booster</td>
+                        <td>16</td>
+                        <td>16</td>
+                        <td>16</td>
+                        <td>37</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">37</td>
+                        <td style="">21</td>
+                        <td style="">21</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>7/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>26</td>
+                        <td class="text-left font-bold">HSK Secret AC-1</td>
+                        <td>122</td>
+                        <td>81</td>
+                        <td>33</td>
+                        <td>83</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">83</td>
+                        <td style="color: red;">-39</td>
+                        <td style="">2</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>5/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>27</td>
+                        <td class="text-left font-bold">HSK Secret AC-3</td>
+                        <td>56</td>
+                        <td>37</td>
+                        <td>17</td>
+                        <td>183</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">183</td>
+                        <td style="">127</td>
+                        <td style="">146</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>4/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>25</td>
+                        <td class="text-left font-bold">HSK Secret Anti-Aging Skin Booster</td>
+                        <td>51</td>
+                        <td>35</td>
+                        <td>16</td>
+                        <td>37</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">37</td>
+                        <td style="color: red;">-14</td>
+                        <td style="">2</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-07-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>28</td>
+                        <td class="text-left font-bold">HSK Secret LUMINOUS GOLD</td>
+                        <td>14</td>
+                        <td>8</td>
+                        <td>6</td>
+                        <td>173</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">173</td>
+                        <td style="">159</td>
+                        <td style="">165</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2029-03-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>29</td>
+                        <td class="text-left font-bold">HSK Secret MS 2</td>
+                        <td>74</td>
+                        <td>36</td>
+                        <td>2</td>
+                        <td>222</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">222</td>
+                        <td style="">148</td>
+                        <td style="">186</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-04-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>30</td>
+                        <td class="text-left font-bold">HSK Secret Radiant White</td>
+                        <td>49</td>
+                        <td>39</td>
+                        <td>24</td>
+                        <td>22</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">22</td>
+                        <td style="color: red;">-27</td>
+                        <td style="color: red;">-17</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2029-03-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>31</td>
+                        <td class="text-left font-bold">HSK Secret SS Serum</td>
+                        <td>99</td>
+                        <td>70</td>
+                        <td>25</td>
+                        <td>17</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">17</td>
+                        <td style="color: red;">-82</td>
+                        <td style="color: red;">-53</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-09-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>32</td>
+                        <td class="text-left font-bold">HSK Secret Wm Serum</td>
+                        <td>60</td>
+                        <td>38</td>
+                        <td>19</td>
+                        <td>76</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">76</td>
+                        <td style="">16</td>
+                        <td style="">38</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-05-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>128</td>
+                        <td class="text-left font-bold">sunblock Dermaheal</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">2</td>
+                        <td style="color: red;">-1</td>
+                        <td style="color: red;">-1</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2030-03-01</td>
+                        <td></td>
+                    </tr>
+                                            <tr>
+                    <td colspan="23" class="bg-kategori">Cream Malam</td>
+                </tr>
+                                                        <tr>
+                        <td>33</td>
+                        <td class="text-left font-bold">HSK Secret Acne Night Cream</td>
+                        <td>43</td>
+                        <td>21</td>
+                        <td>1</td>
+                        <td>95</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">95</td>
+                        <td style="">52</td>
+                        <td style="">74</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2027-11-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>34</td>
+                        <td class="text-left font-bold">HSK Secret Acne Reducer</td>
+                        <td>50</td>
+                        <td>32</td>
+                        <td>8</td>
+                        <td>39</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">39</td>
+                        <td style="color: red;">-11</td>
+                        <td style="">7</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2027-08-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>35</td>
+                        <td class="text-left font-bold">HSK Secret Brightening Complex</td>
+                        <td>79</td>
+                        <td>37</td>
+                        <td>1</td>
+                        <td>92</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">92</td>
+                        <td style="">13</td>
+                        <td style="">55</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-04-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>166</td>
+                        <td class="text-left font-bold">HSK Secret Linghtening Night Cream</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>100</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">100</td>
+                        <td style="">100</td>
+                        <td style="">100</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>11/2028</td>
+                        <td></td>
+                    </tr>
+                                            <tr>
+                    <td colspan="23" class="bg-kategori">LGNC</td>
+                </tr>
+                                                        <tr>
+                        <td>36</td>
+                        <td class="text-left font-bold">HSK Secret LG-1 Night Cream</td>
+                        <td>452</td>
+                        <td>239</td>
+                        <td>3</td>
+                        <td>215</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">215</td>
+                        <td style="color: red;">-237</td>
+                        <td style="color: red;">-24</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2027-07-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>37</td>
+                        <td class="text-left font-bold">HSK Secret LG-2 Night Cream</td>
+                        <td>118</td>
+                        <td>86</td>
+                        <td>38</td>
+                        <td>192</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">192</td>
+                        <td style="">74</td>
+                        <td style="">106</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-04-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>38</td>
+                        <td class="text-left font-bold">HSK Secret LG-3 Night Cream</td>
+                        <td>44</td>
+                        <td>26</td>
+                        <td>17</td>
+                        <td>130</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">130</td>
+                        <td style="">86</td>
+                        <td style="">104</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>4/2028 (7)</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>39</td>
+                        <td class="text-left font-bold">HSK Secret P-0 Night Cream</td>
+                        <td>109</td>
+                        <td>55</td>
+                        <td>1</td>
+                        <td>119</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">119</td>
+                        <td style="">10</td>
+                        <td style="">64</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-08-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>40</td>
+                        <td class="text-left font-bold">HSK Secret P-1 Night Cream</td>
+                        <td>76</td>
+                        <td>43</td>
+                        <td>17</td>
+                        <td>169</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">169</td>
+                        <td style="">93</td>
+                        <td style="">126</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>12/2026 (6)</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>41</td>
+                        <td class="text-left font-bold">HSK Secret P-2 Night Cream</td>
+                        <td>46</td>
+                        <td>27</td>
+                        <td>14</td>
+                        <td>250</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">250</td>
+                        <td style="">204</td>
+                        <td style="">223</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2027-09-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>42</td>
+                        <td class="text-left font-bold">HSK Secret Shine &amp; Bright</td>
+                        <td>31</td>
+                        <td>17</td>
+                        <td>1</td>
+                        <td>74</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">74</td>
+                        <td style="">43</td>
+                        <td style="">57</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td>412</td>
+                        <td>2028-02-01</td>
+                        <td></td>
+                    </tr>
+                                            <tr>
+                    <td colspan="23" class="bg-kategori">Toner</td>
+                </tr>
+                                                        <tr>
+                        <td>43</td>
+                        <td class="text-left font-bold">HSK Secret Brightening Toner</td>
+                        <td>239</td>
+                        <td>171</td>
+                        <td>99</td>
+                        <td>187</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">187</td>
+                        <td style="color: red;">-52</td>
+                        <td style="">16</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-06-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>44</td>
+                        <td class="text-left font-bold">HSK Secret Toner For Oily Skin</td>
+                        <td>72</td>
+                        <td>37</td>
+                        <td>1</td>
+                        <td>244</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">244</td>
+                        <td style="">172</td>
+                        <td style="">207</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2/2028 (189)</td>
+                        <td></td>
+                    </tr>
+                                            <tr>
+                    <td colspan="23" class="bg-kategori">masker</td>
+                </tr>
+                                                        <tr>
+                        <td>45</td>
+                        <td class="text-left font-bold">HSK Secret Masker Acne</td>
+                        <td>127</td>
+                        <td>64</td>
+                        <td>1</td>
+                        <td>259</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">259</td>
+                        <td style="">132</td>
+                        <td style="">195</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-05-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>46</td>
+                        <td class="text-left font-bold">masker oksigen bening</td>
+                        <td>63</td>
+                        <td>39</td>
+                        <td>15</td>
+                        <td>199</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">199</td>
+                        <td style="">136</td>
+                        <td style="">160</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>5/2029 (38)</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>47</td>
+                        <td class="text-left font-bold">Masker Oksigen biru</td>
+                        <td>59</td>
+                        <td>41</td>
+                        <td>10</td>
+                        <td>61</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">61</td>
+                        <td style="">2</td>
+                        <td style="">20</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>10/2027 (2)</td>
+                        <td></td>
+                    </tr>
+                                            <tr>
+                    <td colspan="23" class="bg-kategori">Masker</td>
+                </tr>
+                                                        <tr>
+                        <td>50</td>
+                        <td class="text-left font-bold">Masker skin mtx aloevera hydro shooting</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td>15</td>
+                        <td>0</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td style="color: red;">-20</td>
+                        <td style="color: red;">-20</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-03-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>51</td>
+                        <td class="text-left font-bold">Masker skin mtx milky whiteness</td>
+                        <td>5</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td style="color: red;">-5</td>
+                        <td style="color: red;">-4</td>
+                        <td class="bg-discontinue">Discontinue</td>
+                        <td></td>
+                        <td></td>
+                        <td>1/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>52</td>
+                        <td class="text-left font-bold">Masker skin mtx sensitive calming</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">10</td>
+                        <td style="">0</td>
+                        <td style="">0</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2031-01-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>53</td>
+                        <td class="text-left font-bold">Hsk Secret Masker Vit C</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>100</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">100</td>
+                        <td style="">100</td>
+                        <td style="">100</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-08-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>048</td>
+                        <td class="text-left font-bold">masker peel off huesday gold/gram</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>100</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">100</td>
+                        <td style="">100</td>
+                        <td style="">100</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>1/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>049</td>
+                        <td class="text-left font-bold">masker peel off huesday white/gram</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>100</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">100</td>
+                        <td style="">100</td>
+                        <td style="">100</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>1/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>054</td>
+                        <td class="text-left font-bold">power oxygen (masker f acne)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>100</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">100</td>
+                        <td style="">100</td>
+                        <td style="">100</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2/2028</td>
+                        <td></td>
+                    </tr>
+                                            <tr>
+                    <td colspan="23" class="bg-kategori">Bedak</td>
+                </tr>
+                                                        <tr>
+                        <td>55</td>
+                        <td class="text-left font-bold">GL 01 Padat</td>
+                        <td>9</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">4</td>
+                        <td style="color: red;">-5</td>
+                        <td style="">0</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-03-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>56</td>
+                        <td class="text-left font-bold">GL 02 Padat</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">4</td>
+                        <td style="color: red;">-3</td>
+                        <td style="color: red;">-3</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-04-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>57</td>
+                        <td class="text-left font-bold">Powder GL 01</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>6</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">6</td>
+                        <td style="">3</td>
+                        <td style="">3</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2027-04-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>58</td>
+                        <td class="text-left font-bold">Powder GL 02</td>
+                        <td>5</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td style="color: red;">-5</td>
+                        <td style="color: red;">-3</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-04-01</td>
+                        <td></td>
+                    </tr>
+                                            <tr>
+                    <td colspan="23" class="bg-kategori">Lainnya</td>
+                </tr>
+                                                        <tr>
+                        <td>59</td>
+                        <td class="text-left font-bold">HSK Secret Ac Expert</td>
+                        <td>79</td>
+                        <td>51</td>
+                        <td>29</td>
+                        <td>135</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">135</td>
+                        <td style="">56</td>
+                        <td style="">84</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>11/2027 (63)</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>60</td>
+                        <td class="text-left font-bold">BTMO</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>25</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">25</td>
+                        <td style="">10</td>
+                        <td style="">10</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-06-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>61</td>
+                        <td class="text-left font-bold">BMO Lotion</td>
+                        <td>9</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>5</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">5</td>
+                        <td style="color: red;">-4</td>
+                        <td style="">3</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2027-12-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>62</td>
+                        <td class="text-left font-bold">BNS</td>
+                        <td>15</td>
+                        <td>9</td>
+                        <td>5</td>
+                        <td>12</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">12</td>
+                        <td style="color: red;">-3</td>
+                        <td style="">3</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-04-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>63</td>
+                        <td class="text-left font-bold">Cymi</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td style="color: red;">-2</td>
+                        <td style="color: red;">-1</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2027-10-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>64</td>
+                        <td class="text-left font-bold">Demi Lotion</td>
+                        <td>9</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>9</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">9</td>
+                        <td style="">0</td>
+                        <td style="">5</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-04-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>65</td>
+                        <td class="text-left font-bold">HAGE</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">2</td>
+                        <td style="">0</td>
+                        <td style="">0</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-02-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>66</td>
+                        <td class="text-left font-bold">HSK Secret Hand Body Lotion</td>
+                        <td>26</td>
+                        <td>21</td>
+                        <td>1</td>
+                        <td>28</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">28</td>
+                        <td style="">2</td>
+                        <td style="">7</td>
+                        <td class="bg-discontinue">Discontinue</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-05-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>67</td>
+                        <td class="text-left font-bold">Shampoo</td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">2</td>
+                        <td style="color: red;">-3</td>
+                        <td style="">0</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-08-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>060</td>
+                        <td class="text-left font-bold">Bio Gel (BTMO)</td>
+                        <td>33</td>
+                        <td>17</td>
+                        <td></td>
+                        <td>100</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">100</td>
+                        <td style="">67</td>
+                        <td style="">83</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2/2028</td>
+                        <td></td>
+                    </tr>
+                                            <tr>
+                    <td colspan="23" class="bg-kategori">SMO</td>
+                </tr>
+                                                        <tr>
+                        <td>68</td>
+                        <td class="text-left font-bold">Topicare Cream</td>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td style="color: red;">-3</td>
+                        <td style="color: red;">-6</td>
+                        <td class="bg-discontinue">Discontinue</td>
+                        <td></td>
+                        <td></td>
+                        <td>2/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>69</td>
+                        <td class="text-left font-bold">Under arm</td>
+                        <td>16</td>
+                        <td>16</td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td style="color: red;">-16</td>
+                        <td style="color: red;">-16</td>
+                        <td class="bg-discontinue">Discontinue</td>
+                        <td></td>
+                        <td></td>
+                        <td>2/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>70</td>
+                        <td class="text-left font-bold">Veno c</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">1</td>
+                        <td style="color: red;">-2</td>
+                        <td style="">0</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2027-06-01</td>
+                        <td></td>
+                    </tr>
+                                            <tr>
+                    <td colspan="23" class="bg-kategori">Obat</td>
+                </tr>
+                                                        <tr>
+                        <td>71</td>
+                        <td class="text-left font-bold">Axtan @30</td>
+                        <td>120</td>
+                        <td>120</td>
+                        <td>120</td>
+                        <td>0</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td style="color: red;">-120</td>
+                        <td style="color: red;">-120</td>
+                        <td class="bg-discontinue">Discontinue</td>
+                        <td></td>
+                        <td></td>
+                        <td>2/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>72</td>
+                        <td class="text-left font-bold">CUR</td>
+                        <td>499</td>
+                        <td>279</td>
+                        <td>179</td>
+                        <td>385</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">385</td>
+                        <td style="color: red;">-114</td>
+                        <td style="">106</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2029-04-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>73</td>
+                        <td class="text-left font-bold">EFC 1 @28</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>56</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">56</td>
+                        <td style="">56</td>
+                        <td style="">56</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-08-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>74</td>
+                        <td class="text-left font-bold">FC9 @30</td>
+                        <td>840</td>
+                        <td>490</td>
+                        <td>130</td>
+                        <td>420</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">420</td>
+                        <td style="color: red;">-420</td>
+                        <td style="color: red;">-70</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>75</td>
+                        <td class="text-left font-bold">lanadexon</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>100</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">100</td>
+                        <td style="">100</td>
+                        <td style="">100</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-11-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>76</td>
+                        <td class="text-left font-bold">Levothyroxine @30</td>
+                        <td>270</td>
+                        <td>160</td>
+                        <td>70</td>
+                        <td>270</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">270</td>
+                        <td style="">0</td>
+                        <td style="">110</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-02-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>77</td>
+                        <td class="text-left font-bold">Olibes @30</td>
+                        <td>780</td>
+                        <td>570</td>
+                        <td>270</td>
+                        <td>270</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">270</td>
+                        <td style="color: red;">-510</td>
+                        <td style="color: red;">-300</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-07-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>78</td>
+                        <td class="text-left font-bold">Pan Hair @100</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>0</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td style="">0</td>
+                        <td style="">0</td>
+                        <td class="bg-discontinue">Discontinue</td>
+                        <td></td>
+                        <td></td>
+                        <td>2/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>79</td>
+                        <td class="text-left font-bold">Lanamol</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>0</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td style="color: red;">-10</td>
+                        <td style="color: red;">-10</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>80</td>
+                        <td class="text-left font-bold">Glutasol</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>0</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td style="">0</td>
+                        <td style="">0</td>
+                        <td class="bg-discontinue">Discontinue</td>
+                        <td></td>
+                        <td></td>
+                        <td>2/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>81</td>
+                        <td class="text-left font-bold">Truxantine</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>0</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td style="">0</td>
+                        <td style="">0</td>
+                        <td class="bg-discontinue">Discontinue</td>
+                        <td></td>
+                        <td></td>
+                        <td>3/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>82</td>
+                        <td class="text-left font-bold">S-thione &#039;30</td>
+                        <td>1809</td>
+                        <td>1290</td>
+                        <td>450</td>
+                        <td>480</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">480</td>
+                        <td style="color: red;">-1329</td>
+                        <td style="color: red;">-810</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-02-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>83</td>
+                        <td class="text-left font-bold">Dzinc @30</td>
+                        <td>345</td>
+                        <td>90</td>
+                        <td>90</td>
+                        <td>300</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">300</td>
+                        <td style="color: red;">-45</td>
+                        <td style="">210</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2027-11-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>84</td>
+                        <td class="text-left font-bold">flutamol</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td>0</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td style="color: red;">-20</td>
+                        <td style="color: red;">-20</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>3/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>85</td>
+                        <td class="text-left font-bold">osi sk</td>
+                        <td>683</td>
+                        <td>396</td>
+                        <td>146</td>
+                        <td>48</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">48</td>
+                        <td style="color: red;">-635</td>
+                        <td style="color: red;">-348</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>86</td>
+                        <td class="text-left font-bold">Dohixat</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td>0</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td style="color: red;">-20</td>
+                        <td style="color: red;">-20</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>3/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>074</td>
+                        <td class="text-left font-bold">FC9 @50</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>100</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">100</td>
+                        <td style="">100</td>
+                        <td style="">100</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>083</td>
+                        <td class="text-left font-bold">Zinc @30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>100</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">100</td>
+                        <td style="">100</td>
+                        <td style="">100</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>3/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>085</td>
+                        <td class="text-left font-bold">oshi sk</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>100</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">100</td>
+                        <td style="">100</td>
+                        <td style="">100</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>3/2028</td>
+                        <td></td>
+                    </tr>
+                                            <tr>
+                    <td colspan="23" class="bg-kategori">VIT</td>
+                </tr>
+                                                        <tr>
+                        <td>87</td>
+                        <td class="text-left font-bold">concor 2,5 @100</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">2</td>
+                        <td style="">2</td>
+                        <td style="">2</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>24/8/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>88</td>
+                        <td class="text-left font-bold">enzyme + probiotic</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">1</td>
+                        <td style="color: red;">-1</td>
+                        <td style="color: red;">-1</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>3/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>89</td>
+                        <td class="text-left font-bold">Ester @30</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td style="color: red;">-3</td>
+                        <td style="color: red;">-1</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>3/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>90</td>
+                        <td class="text-left font-bold">FOLATEN @30</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td style="color: red;">-1</td>
+                        <td style="color: red;">-1</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-02-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>91</td>
+                        <td class="text-left font-bold">joint formula wellness @30</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td style="color: red;">-2</td>
+                        <td style="color: red;">-1</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2029-03-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>92</td>
+                        <td class="text-left font-bold">MONECTO &#039;20</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td style="color: red;">-1</td>
+                        <td style="color: red;">-1</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2027-10-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>93</td>
+                        <td class="text-left font-bold">NH nano Calcium @60</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">1</td>
+                        <td style="">0</td>
+                        <td style="color: red;">-1</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>3/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>94</td>
+                        <td class="text-left font-bold">NP melantonin lozenges @60</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">1</td>
+                        <td style="">1</td>
+                        <td style="">1</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>3/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>95</td>
+                        <td class="text-left font-bold">np VIT D3 1000IU</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">1</td>
+                        <td style="">0</td>
+                        <td style="color: red;">-1</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>3/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>96</td>
+                        <td class="text-left font-bold">omega 3 fish oil @75</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">1</td>
+                        <td style="">0</td>
+                        <td style="color: red;">-1</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>3/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>97</td>
+                        <td class="text-left font-bold">peptisol coklat</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">2</td>
+                        <td style="color: red;">-1</td>
+                        <td style="color: red;">-1</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2027-05-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>98</td>
+                        <td class="text-left font-bold">peptisol vanilla</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">2</td>
+                        <td style="">1</td>
+                        <td style="">1</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>3/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>99</td>
+                        <td class="text-left font-bold">Pharmaton GO @60</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td style="color: red;">-1</td>
+                        <td style="color: red;">-1</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>100</td>
+                        <td class="text-left font-bold">plavix @28</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">2</td>
+                        <td style="">1</td>
+                        <td style="">1</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-02-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>101</td>
+                        <td class="text-left font-bold">polysilane @40</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">1</td>
+                        <td style="">1</td>
+                        <td style="">1</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-08-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>102</td>
+                        <td class="text-left font-bold">pulmicort 0,25 mg</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">2</td>
+                        <td style="">1</td>
+                        <td style="">1</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2027-04-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>103</td>
+                        <td class="text-left font-bold">rozet 10/20mg @30</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">2</td>
+                        <td style="">1</td>
+                        <td style="">1</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2029-04-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>104</td>
+                        <td class="text-left font-bold">ventolin 2,5mg</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">1</td>
+                        <td style="">0</td>
+                        <td style="">0</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2027-07-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>099</td>
+                        <td class="text-left font-bold">Pharmaton @60</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>100</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">100</td>
+                        <td style="">100</td>
+                        <td style="">100</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>3/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>105</td>
+                        <td class="text-left font-bold">zinc with vitamin B6 wellness @60</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>100</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">100</td>
+                        <td style="">100</td>
+                        <td style="">100</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>3/2028</td>
+                        <td></td>
+                    </tr>
+                                            <tr>
+                    <td colspan="23" class="bg-kategori">Treatment Equiment</td>
+                </tr>
+                                                        <tr>
+                        <td>106</td>
+                        <td class="text-left font-bold">ADS (cairan detox)</td>
+                        <td>9</td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>8</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">8</td>
+                        <td style="color: red;">-1</td>
+                        <td style="">3</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-04-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>107</td>
+                        <td class="text-left font-bold">Anastesi 500gr u/ 100 pasien</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">1</td>
+                        <td style="color: red;">-1</td>
+                        <td style="">0</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-07-12</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>108</td>
+                        <td class="text-left font-bold">ASTRIGEN (cairan acne)</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">2</td>
+                        <td style="">0</td>
+                        <td style="">1</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-03-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>109</td>
+                        <td class="text-left font-bold">Cream Massage</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">2</td>
+                        <td style="color: red;">-2</td>
+                        <td style="">0</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-06-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>110</td>
+                        <td class="text-left font-bold">Gel IPL</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">1</td>
+                        <td style="">1</td>
+                        <td style="">1</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2027-12-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>111</td>
+                        <td class="text-left font-bold">Ion RX 1 untuk 20 Pasien</td>
+                        <td>8</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>5</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">5</td>
+                        <td style="color: red;">-3</td>
+                        <td style="color: red;">-1</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2027-09-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>112</td>
+                        <td class="text-left font-bold">Ion RX 2 untuk 20 Pasien</td>
+                        <td>7</td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>5</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">5</td>
+                        <td style="color: red;">-2</td>
+                        <td style="">0</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2027-12-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>113</td>
+                        <td class="text-left font-bold">Ion RX 5 untuk 20 Pasien</td>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">2</td>
+                        <td style="color: red;">-4</td>
+                        <td style="color: red;">-2</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2027-12-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>114</td>
+                        <td class="text-left font-bold">Power C u/12 pasien</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">1</td>
+                        <td style="color: red;">-1</td>
+                        <td style="color: red;">-1</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2030-12-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>115</td>
+                        <td class="text-left font-bold">Power Retinol u/15 pasien</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">3</td>
+                        <td style="">2</td>
+                        <td style="">1</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2029-12-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>116</td>
+                        <td class="text-left font-bold">purismart u/3 pasien</td>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>8</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">8</td>
+                        <td style="">2</td>
+                        <td style="">4</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-01-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>117</td>
+                        <td class="text-left font-bold">Radical White u/4 Pasien</td>
+                        <td>17</td>
+                        <td>11</td>
+                        <td>6</td>
+                        <td>12</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">12</td>
+                        <td style="color: red;">-5</td>
+                        <td style="">1</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2027-03-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>118</td>
+                        <td class="text-left font-bold">redensifying prof prog (facial exosome)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>4</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">4</td>
+                        <td style="">4</td>
+                        <td style="">4</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2029-12-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>119</td>
+                        <td class="text-left font-bold">RF Cream</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">1</td>
+                        <td style="">1</td>
+                        <td style="">1</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2027-02-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>120</td>
+                        <td class="text-left font-bold">Skey enzympeel u/25 pasien</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>5</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">5</td>
+                        <td style="">2</td>
+                        <td style="">2</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2029-12-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>121</td>
+                        <td class="text-left font-bold">Telomatrik u/ 8 pasien</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">8</td>
+                        <td style="">4</td>
+                        <td style="">5</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2027-07-01</td>
+                        <td></td>
+                    </tr>
+                                            <tr>
+                    <td colspan="23" class="bg-kategori">KOREAN LUX</td>
+                </tr>
+                                                        <tr>
+                        <td>122</td>
+                        <td class="text-left font-bold">eye complex u/ 80 orang</td>
+                        <td></td>
+                        <td>1</td>
+                        <td></td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">1</td>
+                        <td style="">1</td>
+                        <td style="">0</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>4/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>123</td>
+                        <td class="text-left font-bold">hydra cool serum 15ml u/45 orang</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">2</td>
+                        <td style="">1</td>
+                        <td style="">0</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>4/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>124</td>
+                        <td class="text-left font-bold">LIP POLISH k-lux u/150 org</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">1</td>
+                        <td style="">1</td>
+                        <td style="">1</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>4/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>125</td>
+                        <td class="text-left font-bold">MASKER REJUVE u/ 40 orang</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td style="color: red;">-1</td>
+                        <td style="color: red;">-1</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>4/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>126</td>
+                        <td class="text-left font-bold">PEELING K-lux u/80 org</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>0</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td style="">0</td>
+                        <td style="">0</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>4/2028</td>
+                        <td></td>
+                    </tr>
+                                            <tr>
+                    <td colspan="23" class="bg-kategori">Kebutuhan treatment</td>
+                </tr>
+                                                        <tr>
+                        <td>129</td>
+                        <td class="text-left font-bold">alas bad</td>
+                        <td>300</td>
+                        <td>150</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">100</td>
+                        <td style="color: red;">-200</td>
+                        <td style="color: red;">-50</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>130</td>
+                        <td class="text-left font-bold">Carbon</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>0</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td style="">0</td>
+                        <td style="">0</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>4/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>131</td>
+                        <td class="text-left font-bold">cutton bud</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>6</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">6</td>
+                        <td style="">3</td>
+                        <td style="">5</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>4/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>132</td>
+                        <td class="text-left font-bold">Ear candle</td>
+                        <td>8</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>7</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">7</td>
+                        <td style="color: red;">-1</td>
+                        <td style="">4</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>4/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>133</td>
+                        <td class="text-left font-bold">gel waxing</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">1</td>
+                        <td style="">1</td>
+                        <td style="">1</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>4/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>134</td>
+                        <td class="text-left font-bold">Hairnet</td>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">3</td>
+                        <td style="color: red;">-3</td>
+                        <td style="color: red;">-1</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>4/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>135</td>
+                        <td class="text-left font-bold">kapas 75 gr</td>
+                        <td>13</td>
+                        <td>8</td>
+                        <td>2</td>
+                        <td>17</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">17</td>
+                        <td style="">4</td>
+                        <td style="">9</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>4/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>136</td>
+                        <td class="text-left font-bold">PROBE (VAGINA OZONE)</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">2</td>
+                        <td style="">0</td>
+                        <td style="">0</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>4/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>137</td>
+                        <td class="text-left font-bold">Tisu Masker</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">2</td>
+                        <td style="color: red;">-2</td>
+                        <td style="color: red;">-1</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>4/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>138</td>
+                        <td class="text-left font-bold">AVZ</td>
+                        <td>16</td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>34</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">34</td>
+                        <td style="">18</td>
+                        <td style="">24</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2029-04-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>139</td>
+                        <td class="text-left font-bold">BRU</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>18</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">18</td>
+                        <td style="">14</td>
+                        <td style="">15</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2027-11-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>140</td>
+                        <td class="text-left font-bold">Clindamicin 150</td>
+                        <td>229</td>
+                        <td>149</td>
+                        <td>60</td>
+                        <td>1288</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">1288</td>
+                        <td style="">1059</td>
+                        <td style="">1139</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2029-10-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>141</td>
+                        <td class="text-left font-bold">Clindamicin 300</td>
+                        <td>587</td>
+                        <td>373</td>
+                        <td>162</td>
+                        <td>2332</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">2332</td>
+                        <td style="">1745</td>
+                        <td style="">1959</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2029-01-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>142</td>
+                        <td class="text-left font-bold">cincort</td>
+                        <td>63</td>
+                        <td>39</td>
+                        <td>20</td>
+                        <td>160</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">160</td>
+                        <td style="">97</td>
+                        <td style="">121</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>6/227</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>143</td>
+                        <td class="text-left font-bold">cls</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>43</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">43</td>
+                        <td style="">39</td>
+                        <td style="">42</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-02-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>144</td>
+                        <td class="text-left font-bold">DEMY CREAM</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>18</td>
+                        <td>42</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">42</td>
+                        <td style="">37</td>
+                        <td style="">37</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-03-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>145</td>
+                        <td class="text-left font-bold">DSR30g</td>
+                        <td>11</td>
+                        <td>8</td>
+                        <td>3</td>
+                        <td>6</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">6</td>
+                        <td style="color: red;">-5</td>
+                        <td style="color: red;">-2</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2027-11-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>146</td>
+                        <td class="text-left font-bold">Glucy</td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>7</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">7</td>
+                        <td style="color: red;">-3</td>
+                        <td style="">1</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2027-11-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>147</td>
+                        <td class="text-left font-bold">INS1</td>
+                        <td>8</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>27</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">27</td>
+                        <td style="">19</td>
+                        <td style="">24</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-02-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>148</td>
+                        <td class="text-left font-bold">INS5</td>
+                        <td>29</td>
+                        <td>19</td>
+                        <td>8</td>
+                        <td>116</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">116</td>
+                        <td style="">87</td>
+                        <td style="">97</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2027-11-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>149</td>
+                        <td class="text-left font-bold">KSQ</td>
+                        <td>80</td>
+                        <td>52</td>
+                        <td>23</td>
+                        <td>86</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">86</td>
+                        <td style="">6</td>
+                        <td style="">34</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-05-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>150</td>
+                        <td class="text-left font-bold">KSA1</td>
+                        <td>71</td>
+                        <td>45</td>
+                        <td>15</td>
+                        <td>161</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">161</td>
+                        <td style="">90</td>
+                        <td style="">116</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-01-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>151</td>
+                        <td class="text-left font-bold">KSA2</td>
+                        <td>35</td>
+                        <td>25</td>
+                        <td>10</td>
+                        <td>108</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">108</td>
+                        <td style="">73</td>
+                        <td style="">83</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-01-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>152</td>
+                        <td class="text-left font-bold">KSA3</td>
+                        <td>20</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>149</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">149</td>
+                        <td style="">129</td>
+                        <td style="">144</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-01-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>153</td>
+                        <td class="text-left font-bold">KSB3</td>
+                        <td>403</td>
+                        <td>260</td>
+                        <td>115</td>
+                        <td>475</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">475</td>
+                        <td style="">72</td>
+                        <td style="">215</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>1960-04-22</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>154</td>
+                        <td class="text-left font-bold">SP1</td>
+                        <td>67</td>
+                        <td>43</td>
+                        <td>22</td>
+                        <td>40</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">40</td>
+                        <td style="color: red;">-27</td>
+                        <td style="color: red;">-3</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-07-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>155</td>
+                        <td class="text-left font-bold">SP2</td>
+                        <td>11</td>
+                        <td>8</td>
+                        <td>2</td>
+                        <td>27</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">27</td>
+                        <td style="">16</td>
+                        <td style="">19</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-06-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>156</td>
+                        <td class="text-left font-bold">SP3</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>18</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">18</td>
+                        <td style="">14</td>
+                        <td style="">16</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2027-11-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>157</td>
+                        <td class="text-left font-bold">Mymask surgical face mask</td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>7</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">7</td>
+                        <td style="">1</td>
+                        <td style="">1</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>5/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>158</td>
+                        <td class="text-left font-bold">See-U facial tissue</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>3</td>
+                        <td>21</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">21</td>
+                        <td style="">16</td>
+                        <td style="">16</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>5/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>159</td>
+                        <td class="text-left font-bold">tisu hand towel</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>16</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">16</td>
+                        <td style="">11</td>
+                        <td style="">11</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>160</td>
+                        <td class="text-left font-bold">Plenty bathroom rolls</td>
+                        <td>47</td>
+                        <td>47</td>
+                        <td>20</td>
+                        <td>86</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">86</td>
+                        <td style="">39</td>
+                        <td style="">39</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>5/2028</td>
+                        <td></td>
+                    </tr>
+                                            <tr>
+                    <td colspan="23" class="bg-kategori">bahan racik D10/ Penggnti LGNC</td>
+                </tr>
+                                                        <tr>
+                        <td>163</td>
+                        <td class="text-left font-bold">Eqinon forte cream 15gr</td>
+                        <td>16</td>
+                        <td>16</td>
+                        <td>8</td>
+                        <td>12</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">12</td>
+                        <td style="color: red;">-4</td>
+                        <td style="color: red;">-4</td>
+                        <td class="bg-pesan">Pesan</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-09-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>164</td>
+                        <td class="text-left font-bold">Reticor 0,1 15gr</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">3</td>
+                        <td style="">1</td>
+                        <td style="">1</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2028-09-01</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>165</td>
+                        <td class="text-left font-bold">Pology B niacinamide 125 gr</td>
+                        <td>30</td>
+                        <td>30</td>
+                        <td>15</td>
+                        <td>95</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">95</td>
+                        <td style="">65</td>
+                        <td style="">65</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>2029-07-01</td>
+                        <td></td>
+                    </tr>
+                                            <tr>
+                    <td colspan="23" class="bg-kategori">Korean Lux</td>
+                </tr>
+                                                        <tr>
+                        <td>127</td>
+                        <td class="text-left font-bold">Pro health serum 15ml u/45 org</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>100</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">100</td>
+                        <td style="">100</td>
+                        <td style="">100</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>4/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>128</td>
+                        <td class="text-left font-bold">sunblock SBD</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>100</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">100</td>
+                        <td style="">100</td>
+                        <td style="">100</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>4/2028</td>
+                        <td></td>
+                    </tr>
+                                            <tr>
+                    <td colspan="23" class="bg-kategori">Kebutuhan Treatment</td>
+                </tr>
+                                                        <tr>
+                        <td>129</td>
+                        <td class="text-left font-bold">alas bed</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>100</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">100</td>
+                        <td style="">100</td>
+                        <td style="">100</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>4/2028</td>
+                        <td></td>
+                    </tr>
+                                            <tr>
+                    <td colspan="23" class="bg-kategori">Bahan Racik</td>
+                </tr>
+                                                        <tr>
+                        <td>159</td>
+                        <td class="text-left font-bold">hand towel</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td></td>
+                        <td>100</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">100</td>
+                        <td style="">98</td>
+                        <td style="">99</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>5/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>161</td>
+                        <td class="text-left font-bold">SMO</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>100</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">100</td>
+                        <td style="">100</td>
+                        <td style="">100</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>5/2028</td>
+                        <td></td>
+                    </tr>
+                                                        <tr>
+                        <td>162</td>
+                        <td class="text-left font-bold">WELLNESS starch blocker @60</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>100</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">100</td>
+                        <td style="">100</td>
+                        <td style="">100</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>5/2028</td>
+                        <td></td>
+                    </tr>
+                                            <tr>
+                    <td colspan="23" class="bg-kategori">obat</td>
+                </tr>
+                                                        <tr>
+                        <td>001</td>
+                        <td class="text-left font-bold">Glution Inject</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="font-bold">0</td>
+                        <td></td>
+                        <td class="font-bold">6</td>
+                        <td style="">2</td>
+                        <td style="">2</td>
+                        <td class="">Tidak</td>
+                        <td></td>
+                        <td></td>
+                        <td>8/2028</td>
+                        <td></td>
+                    </tr>
+                                    </tbody>
+    </table>
+</body>
+</html>
