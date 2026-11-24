@@ -379,6 +379,15 @@
                     </div>
 
                     <form wire:submit.prevent="simpanModalEdit" class="p-6 space-y-4 text-xs">
+                        <div>
+                            <label class="block font-bold text-gray-700 dark:text-gray-300 mb-1">Kategori Barang</label>
+                            <select wire:model="editKategori" class="w-full text-xs rounded-xl border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white py-2 px-3 focus:ring-purple-500">
+                                @foreach ($this->kategori_list as $kat)
+                                    <option value="{{ $kat }}">{{ $kat }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+
                         <div class="grid grid-cols-2 gap-3">
                             <div>
                                 <label class="block font-bold text-gray-700 dark:text-gray-300 mb-1">Status Pesan</label>

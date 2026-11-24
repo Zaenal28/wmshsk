@@ -42,6 +42,7 @@ class StokGudangPusat extends Page
     public bool $showEditModal = false;
     public ?int $editingId = null;
     public ?string $editNamaBarang = '';
+    public ?string $editKategori = '';
     public ?string $editTanggalPesan = null;
     public ?int $editStokPabrik = null;
     public ?string $editStatusPesan = 'Tidak';
@@ -83,13 +84,7 @@ class StokGudangPusat extends Page
 
     public function getKategoriListProperty(): array
     {
-        return PerencanaanStok::query()
-            ->where('periode', $this->getPeriodeKey())
-            ->whereNotNull('kategori')
-            ->where('kategori', '!=', '')
-            ->distinct()
-            ->pluck('kategori')
-            ->toArray();
+        return array_values(Barang::getKategoriOptions());
     }
 
     public function getPerencanaanStoksGroupedProperty(): Collection
@@ -488,6 +483,7 @@ class StokGudangPusat extends Page
 
         $this->editingId = $record->id;
         $this->editNamaBarang = $record->nama_barang;
+        $this->editKategori = $record->kategori;
         $this->editTanggalPesan = $record->tanggal_pesan ? $record->tanggal_pesan->format('Y-m-d') : null;
         $this->editStokPabrik = $record->stok_pabrik;
         $this->editStatusPesan = $record->status_pesan;
@@ -511,6 +507,7 @@ class StokGudangPusat extends Page
         $record = PerencanaanStok::find($this->editingId);
         if ($record) {
             $record->update([
+                'kategori' => $this->editKategori ?: 'Lain-lain',
                 'tanggal_pesan' => $this->editTanggalPesan ?: null,
                 'stok_pabrik' => $this->editStokPabrik !== null ? (int) $this->editStokPabrik : null,
                 'status_pesan' => $this->editStatusPesan,
@@ -518,6 +515,13 @@ class StokGudangPusat extends Page
                 'expired_2' => $this->editExpired2,
                 'catatan' => $this->editCatatan,
             ]);
+
+            // Jika ada master Barang terkait, sinkronkan juga kategorinya
+            if ($record->barang_id) {
+                Barang::where('id', $record->barang_id)->update([
+                    'kategori' => $this->editKategori ?: 'Lain-lain',
+                ]);
+            }
 
             Notification::make()
                 ->title("Data {$record->nama_barang} berhasil diperbarui!")

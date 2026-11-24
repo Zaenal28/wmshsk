@@ -89,12 +89,93 @@ class Barang extends Model
         };
     }
 
+    protected static function booted(): void
+    {
+        // Otomatis sinkronkan ke Perencanaan Stok saat barang baru ditambahkan
+        static::created(function (Barang $barang) {
+            $standardName = PerencanaanStok::standardizeProductName($barang->nama_barang);
+            $currentPeriode = date('Y-m');
+
+            // Ambil periode berjalan dan periode mendatang yang ada di database
+            $periodes = PerencanaanStok::select('periode')
+                ->where('periode', '>=', $currentPeriode)
+                ->distinct()
+                ->pluck('periode');
+
+            if ($periodes->isEmpty()) {
+                $periodes = collect([$currentPeriode]);
+            }
+
+            foreach ($periodes as $p) {
+                PerencanaanStok::updateOrCreate(
+                    [
+                        'periode' => $p,
+                        'tipe_periode' => 'bulanan',
+                        'nama_barang' => $standardName,
+                    ],
+                    [
+                        'barang_id' => $barang->id,
+                        'no_urut' => (string) $barang->no,
+                        'kategori' => $barang->kategori ?: 'Lain-lain',
+                        'stok_awal' => (int) $barang->jumlah,
+                        'stok_akhir' => (int) $barang->jumlah,
+                        'expired_1' => $barang->tanggal_expired ? Carbon::parse($barang->tanggal_expired)->format('n/Y') : null,
+                        'status_pesan' => 'Tidak',
+                        'tanggal_mulai' => Carbon::parse($p . '-01')->startOfMonth()->toDateString(),
+                        'tanggal_selesai' => Carbon::parse($p . '-01')->endOfMonth()->toDateString(),
+                    ]
+                );
+            }
+        });
+
+        // Otomatis perbarui Perencanaan Stok saat barang diedit di Kelola Barang
+        static::updated(function (Barang $barang) {
+            $oldName = $barang->getOriginal('nama_barang');
+            $standardOldName = $oldName ? PerencanaanStok::standardizeProductName($oldName) : null;
+            $standardNewName = PerencanaanStok::standardizeProductName($barang->nama_barang);
+
+            // Cari semua perencanaan_stoks yang terkait dengan barang ini
+            $query = PerencanaanStok::where('barang_id', $barang->id);
+            if ($standardOldName) {
+                $query->orWhere('nama_barang', $oldName)
+                      ->orWhere('nama_barang', $standardOldName);
+            }
+
+            $query->update([
+                'barang_id' => $barang->id,
+                'nama_barang' => $standardNewName,
+                'kategori' => $barang->kategori ?: 'Lain-lain',
+                'no_urut' => (string) $barang->no,
+            ]);
+
+            // Jika tanggal expired diubah, perbarui expired_1 di periode berjalan & masa depan
+            if ($barang->isDirty('tanggal_expired') && $barang->tanggal_expired) {
+                $formattedExp = Carbon::parse($barang->tanggal_expired)->format('n/Y');
+                PerencanaanStok::where('barang_id', $barang->id)
+                    ->where('periode', '>=', date('Y-m'))
+                    ->update(['expired_1' => $formattedExp]);
+            }
+        });
+
+        // Hapus dari periode aktif & masa depan jika barang dihapus dari master
+        static::deleted(function (Barang $barang) {
+            $standardName = PerencanaanStok::standardizeProductName($barang->nama_barang);
+            PerencanaanStok::where(function ($q) use ($barang, $standardName) {
+                $q->where('barang_id', $barang->id)
+                  ->orWhere('nama_barang', $barang->nama_barang)
+                  ->orWhere('nama_barang', $standardName);
+            })
+            ->where('periode', '>=', date('Y-m'))
+            ->delete();
+        });
+    }
+
     /**
      * Daftar kategori default beserta kategori baru yang pernah diketik/ditambahkan ke database
      */
     public static function getKategoriOptions(): array
     {
-        $defaults = [
+        $orderedDefaults = [
             'Pembersih' => 'Pembersih',
             'Sabun' => 'Sabun',
             'Sunblock' => 'Sunblock',
@@ -107,22 +188,39 @@ class Barang extends Model
             'Lainnya' => 'Lainnya',
             'Obat' => 'Obat',
             'VIT' => 'VIT',
-            'Treatment Equiement' => 'Treatment Equiement',
+            'Treatment Equiment' => 'Treatment Equiment',
+            'Kebutuhan treatment' => 'Kebutuhan treatment',
             'KOREAN LUX' => 'KOREAN LUX',
-            'Kebutuhan Treatment' => 'Kebutuhan Treatment',
             'Bahan Racik' => 'Bahan Racik',
+            'bahan racik D10/ Penggnti LGNC' => 'bahan racik D10/ Penggnti LGNC',
+            'LGNC' => 'LGNC',
+            'SMO' => 'SMO',
+            'DEEPORE' => 'DEEPORE',
+            'Injeksi + dokter' => 'Injeksi + dokter',
         ];
 
-        $customFromDb = static::query()
+        // Ambil kategori dari master barang
+        $fromBarangs = static::query()
             ->whereNotNull('kategori')
             ->where('kategori', '!=', '')
             ->distinct()
             ->pluck('kategori', 'kategori')
             ->toArray();
 
-        $customInSession = session('custom_kategori_barang', []);
+        // Ambil kategori dari perencanaan stok agar selalu sinkron 100%
+        $fromPerencanaan = PerencanaanStok::query()
+            ->whereNotNull('kategori')
+            ->where('kategori', '!=', '')
+            ->distinct()
+            ->pluck('kategori', 'kategori')
+            ->toArray();
 
-        return array_merge($defaults, $customFromDb, $customInSession);
+        $fromSession = session('custom_kategori_barang', []);
+
+        // Gabungkan seluruh kategori unik
+        $all = array_merge($orderedDefaults, $fromBarangs, $fromPerencanaan, $fromSession);
+
+        return $all;
     }
 
     /**
